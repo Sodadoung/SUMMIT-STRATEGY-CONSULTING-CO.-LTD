@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Tour_Kh</title>
+    <style>
+        body {
+            background-image: url(back01.png);
+            background-color: rgb(115, 92, 50);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        @media (max-width: 990px) and (min-width: 576px) {
+    .navbar-brand {
+        width: 100%; /* Adjust logo size for better fit */
+    }
+    .navbar-nav .nav-item {
+        margin-right: 5px; /* Reduce space between nav items */
+    }
+    .navbar-collapse {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    .navbar-nav {
+        margin-bottom: 10px; /* Add space below nav items */
+    }
+    .d-flex {
+        flex-direction: row; /* Ensure language dropdown and search form stay inline */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgba(138, 93, 10, 0.726); padding: 0;">
+        <div class="container-fluid">
+            <!-- Brand Logo -->
+            <a class="navbar-brand" href="javascript:void(0)" style="width: 150px;">
+                <img src="logo.png" alt="logo" style="width: 100%; height: 100%;">
+            </a>
+            <!-- Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapsible Menu -->
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <!-- Navigation Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" id="homeLink">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Tour.html" id="Tours_Khmer">Tours_Kh</a>
+                    </li>
+                    <!-- Adventure Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="border-radius: 5px; background-color: #0D6EFD; color: white;" href="#" id="adventureDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Adventure
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="adventureDropdown">
+                            <li><a class="dropdown-item" href="#" data-value="1">Kampot</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="2">កំពង់សោម</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="3">សៀមរាប</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="4">ពោធិសាត់</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="5">កំពង់ស្ពឺ</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="6">កណ្ដាល</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html" id="AboutUs">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" id="ContactUs">Contact Us</a>
+                    </li>
+                    <!-- Language Dropdown in Nav -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="km">ភាសាខ្មែរ(Khmer)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Search Form -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                    <button class="btn btn-primary" type="button" id="searchButton">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    
+   <div class="container mt-5 font-family-battambang">
+    <div class="row">
+            <!-- Card 1 -->
+            <div class="col col-md-3">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails(' ',' តោះ ទៅលេងកោះកុងក្រៅជាមួយ ស្តេចព្រៃ Sdach Prey ! ចូលឆ្នាំ អត់ស្រុកទៅ មិនដឹងទៅណា ទៅដើរលេងនៅកោះកុង ក្រៅជាមួយ ស្ដេចព្រៃ Sdach Prey មងទៅ! កោះកុងក្រៅ ពីយានអាកាស ដ្រូន ស្អាតណាស់! Drone View: Gin Sdach Prey ចូលឆ្នាំដើរលេងកោះកុងក្រៅ - ក្រុមថ្ងៃ 06-07 - ក្រុមថ្ងៃ 13-15 ចូលឆ្នាំខ្មែរ - ក្រុមថ្ងៃ 14-16 ចូលឆ្នាំខ្មែរ | - ក្រុមថ្ងៃ 21-22 មេសា - ក្រុមថ្ងៃ 27-28 មេសា 2យប់3ថ្ងៃ តម្លៃ110.99$ផ្តល់ជូន:+មធ្យោបាយធ្វើដំនើរពីភ្នំពេញ ទូកខ្នាតធំមិនខ្លាចរលកអមដោយកូនអូប័រ អាហារឆ្ងាញ់ៗបែបអ្នកកោះទឹកពិសារ  +តង់សម្រាប់គេង នឹងកម្រាលអេប៉ុង ទូកជូនដើរលេងស្ទួចត្រីមើលផ្កាថ្ម  +ដើរលេងឆ្នេរទី៣ ទី៤ ទី6 នឹងភូមិលើកោះអាវឡាតាន់  +មានខារ៉ាអូខេសម្រាប់ច្រៀងលើទូក ម៉ាស៊ីនភ្លើងនឹងភ្លើងដេគ័រនៅលើឆ្នេរ  +សម្ភារះចំអិនអាហារ អាំងសាច់មួយកំប្លែ ស្តាយជំនាញផ្នែកសមុទ្រជូនដើរលេងនឹងថតរូប  Telegram +85569513505 **ផ្តល់ជូន៖ ម្ហូបឆ្ងាញ់ៗ ទឹក, តង់, ទូក និងការធ្វើដំណើរ តេលេក្រាមស្ដេចព្រៃ 069513505 / 099607878', '$110.99', ['https://i.ytimg.com/vi/gnVQ3f9Id7E/hqdefault.jpg', ' https://www.popular.com.kh/wp-content/uploads/2020/10/Master-for-Web-65.jpg',' https://s9.kh1.co/__image/w=1200,h=630,q=100/33/338b42e970e2bfaedd996a00505253c3b68276a6.jpg'])">
+                    <img src="https://business-cambodia.com/cms/assets/e32ff965-c63b-48fe-bdec-cee47d352a9d?width=1280&height=719" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title">តោះទៅលេងកោះកុងក្រៅ</h5>
+                        <p class="card-text  text text-truncate">
+                            តោះ ទៅលេងកោះកុងក្រៅជាមួយ! ចូលឆ្នាំ អត់ស្រុកទៅ មិនដឹងទៅណា ទៅដើរលេងនៅកោះកុង កោះកុងក្រៅ ពីយានអាកាស ដ្រូន ស្អាតណាស់! Drone View: Gin Sdach Prey ចូលឆ្នាំដើរលេងកោះកុងក្រៅ - ក្រុមថ្ងៃ 06-07 - ក្រុមថ្ងៃ 13-15 ចូលឆ្នាំខ្មែរ - ក្រុមថ្ងៃ 14-16 ចូលឆ្នាំខ្មែរ | - ក្រុមថ្ងៃ 21-22 មេសា - ក្រុមថ្ងៃ 27-28 មេសា 2យប់3ថ្ងៃ តម្លៃ110.99$ផ្តល់ជូន:+មធ្យោបាយធ្វើដំនើរពីភ្នំពេញ ទូកខ្នាតធំមិនខ្លាចរលកអមដោយកូនអូប័រ អាហារឆ្ងាញ់ៗបែបអ្នកកោះទឹកពិសារ  +តង់សម្រាប់គេង នឹងកម្រាលអេប៉ុង ទូកជូនដើរលេងស្ទួចត្រីមើលផ្កាថ្ម  +ដើរលេងឆ្នេរទី៣ ទី៤ ទី6 នឹងភូមិលើកោះអាវឡាតាន់  +មានខារ៉ាអូខេសម្រាប់ច្រៀងលើទូក ម៉ាស៊ីនភ្លើងនឹងភ្លើងដេគ័រនៅលើឆ្នេរ  +សម្ភារះចំអិនអាហារ អាំងសាច់មួយកំប្លែ ស្តាយជំនាញផ្នែកសមុទ្រជូនដើរលេងនឹងថតរូប  Telegram +85569513505 **ផ្តល់ជូន៖ ម្ហូបឆ្ងាញ់ៗ ទឹក, តង់, ទូក និងការធ្វើដំណើរ តេលេក្រាមស្ដេចព្រៃ 069513505 / 099607878</p>
+                        <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $110.99 </span><span id="code" style="color: red;font-weight: bold;">Code: P425</span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col col-md-3">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails(' កោះម្នាស់', ' កោះម្នាស់ Pine Apple Island Let`s trip with Solo Landscapes on 06th-07th April 2024! The new place that relaxes and chills the white sand beach. Link to register: https://t.me/sololandscapes​​  / Follow us on Instagram: https://shorturl.at/bMOTY Telegram Channel: https://shorturl.at/loPQ9', ' $100.99', [' https://refile.tnaot.com/image/2020/07/03/7f9c65ae9de348bda0d7682646b13bc6.jpg', ' https://i.ytimg.com/vi/fdcrFgyLw8k/maxresdefault.jpg','https://i.ytimg.com/vi/Qx8Gttwx6Bw/mqdefault.jpg'])">
+                    <img src="https://i.ytimg.com/vi/Tw-0ME8MnZs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCPANI4Zr433xfKyKztoH5_x6322g" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title">កោះម្នាស់</h5>
+                        <p class="card-text  text text-truncate">កោះម្នាស់ Pine Apple Island Let's trip with Solo Landscapes on 06th-07th April 2024! The new place that relaxes and chills the white sand beach. Link to register: https://t.me/sololandscapes​​  / Follow us on Instagram: https://shorturl.at/bMOTY Telegram Channel: https://shorturl.at/loPQ9</p>
+                        <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $100.99 </span><span id="code" style="color: red;font-weight: bold;">Code: P027</span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col col-md-3">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails(' ', 'ទៅដើរលេង អារ៉ែងខេមភីង ជាមួយ ដើរ២ - Roadering ចេញដំណើរ៖ 12-13 សីហា 2023 អារ៉ែងខេមភីង ជាតំបន់ទាក់ទាញខ្លាំងមួយនៅក្នុងតំបន់ព្រៃពណ៍ បៃតងនៃតំបន់អារ៉ែង។ ចុះឈ្មោះតាមតំណរខាងក្រោម៖ https://forms.gle/ju6ja4qQn7HhGAy87  / តម្លៃ៖ 90.99ដុល្លារ/ម្នាក់ √ ការធ្វើដំណើរទៅមកតាមឡាន ⁄ ការធ្វើដំណើរតាមទូក / អាហារ4ពេល និងភេសជ្ជៈ ⁄ ការស្នាក់នៅតង់ (1គេង2នាក់) / មគ្គុទេសន៍ក្នុងតំបន់ និងក្រុមការងារ / ការកំសាន្តផ្សេងៗ...។ពត៍មានបន្ថែមសូមទំនាក់ទំនង 086 235 360 ', ' $90.99 ', ['https://cdn.prod.website-files.com/6645c4efb6c65d9864807fc9/66c866474def09e5af7b5d57_2.jpg', ' https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/418948161_851266353676201_6967753837765484185_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=3jmo5H1p6-gQ7kNvgEly6X-&_nc_ht=scontent-bkk1-1.xx&_nc_gid=A-JVEEiaRY88f4ZqvgJfFKf&oh=00_AYCUVTClhDT-n0ruwTCt3YrxWyKXJi0qGK8TjSGo0kKFfg&oe=66E9A3D0',' https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/418475163_851267100342793_4494254268040127878_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=nabdNASBOssQ7kNvgGNGeKl&_nc_ht=scontent-bkk1-2.xx&_nc_gid=A41iWDxAJLkpGhd2PjiwI4b&oh=00_AYDr1ju5fMMjIeRT8nh0SYCfzcNGHaDYXKEpu9YZ706ppA&oe=66E989B2'])">
+                    <img src=" https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/416330599_851267260342777_8522833933507314464_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Giu9lDe02u0Q7kNvgHenKJi&_nc_ht=scontent-bkk1-1.xx&oh=00_AYBhOwDX-VwpZtaEqGivrIxWu-Lk-zawKpktLedsVBqsvA&oe=66E991A7 " style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title ">អារ៉ែងខេមភីង </h5>
+                        <p class="card-text  text text-truncate">ទៅដើរលេង អារ៉ែងខេមភីង ជាមួយ ដើរ២ - Roadering ចេញដំណើរ៖ 12-13 សីហា 2023 អារ៉ែងខេមភីង ជាតំបន់ទាក់ទាញខ្លាំងមួយនៅក្នុងតំបន់ព្រៃពណ៍ បៃតងនៃតំបន់អារ៉ែង។ ចុះឈ្មោះតាមតំណរខាងក្រោម៖ https://forms.gle/ju6ja4qQn7HhGAy87  / តម្លៃ៖ 90.99ដុល្លារ/ម្នាក់ √ ការធ្វើដំណើរទៅមកតាមឡាន ⁄ ការធ្វើដំណើរតាមទូក / អាហារ4ពេល និងភេសជ្ជៈ ⁄ ការស្នាក់នៅតង់ (1គេង2នាក់) / មគ្គុទេសន៍ក្នុងតំបន់ និងក្រុមការងារ / ការកំសាន្តផ្សេងៗ...។ពត៍មានបន្ថែមសូមទំនាក់ទំនង 086 235 360 </p>
+                        <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $90.99 </span><span id="code" style="color: red;font-weight: bold;">Code: P265</span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col col-md-3">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails(' Chi Phat(ជីផាត)', 'Chi Phat is mainland South East Asia`s largest remaining tract of rainforest situated directly in the heart of the Cardamom Mountains. There is a lot of fascinating nature at Chi Phat, including mountains, waterfalls, rivers, evergreen forests, low land swamps and Malaluka swamps. Thanks to the good network of forest trails at Chi Phat tourists get the chance to watch quite a huge diversity of wildlife and birds. In addition to that, tourists can also visit a beautiful village full of warm, open people and see cultural artifacts such as burial jars and wooden coffins. Activities which can be done at Chi Phat go from single and multi day mountain biking and trekking and traditional boat trips, to forest camping, wildlife and bird watching and village explorations. (Credit to Wildlife Alliance) Date: 30th-31st Jul 2022 Duration: 1 night 2 days (Weekend) Price: $100.99 (chilling out and motorbike trip) Day 1: - Departure at 4:30am in front of National Pediatric Hospital -Breakfast and Coffee Break along the ways-Reached at Chipat community -Check in your homestay (about 3km from community) -Install the tents -Lunch Time there -Prepare stuffs to Ou Tek Vet Waterfall and Chhay Khpos -Swimming and relax -Back to campsite -Dinner gathering -Sharing session by leader there ;Day2: -Get up at 6:30am -Trek to Shaved Mountain to see sunrise there. -Enjoying breakfast and coffee there -Take rafting near homestay -Having lunch there -Return to Phnom Penh Include: Transportation, Tent for 2 people, Entrance Fee, Motorbike, sleeping pad, 4 meals, coffee, communities fee, snack, refilling water, water 20L to refill and motorbike (Drive own). Exclude Insurance, soft drink, personal expense, breakfast at day 1 and dinner at day2 Personal Stuffs should bring with:Reusable lunch box, short spoon, reusable bottle(1.5L up), coffee cup, hiking shoes, flip flop, raincoat, hiking backpack,headlight, masks, and washing sanitizing, sleeping bag, 4 sets of clothes (Swimming), Scarf and personal needs.Contact us via 0312222168, 012778 679, Thanks for your booking. ', '$100.99 ', ['https://tripleacambodia.com/wp-content/uploads/2013/03/DSC_0093.jpg ', ' https://www.cambotours.com/userfiles/thumbs/chi-phat-community-based-eco-tourism-site.jpg',' https://www.localguidesconnect.com/t5/image/serverpage/image-id/997334i565A2D0059902A16?v=v2'])">
+                    <img src=" https://thealtruistictraveller.com/s/51524087023470235/blog/SAM_4897.jpg" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title"> </h5>
+                        <p class="card-text  text text-truncate">Chi Phat is mainland South East Asia's largest remaining tract of rainforest situated directly in the heart of the Cardamom Mountains. There is a lot of fascinating nature at Chi Phat, including mountains, waterfalls, rivers, evergreen forests, low land swamps and Malaluka swamps. Thanks to the good network of forest trails at Chi Phat tourists get the chance to watch quite a huge diversity of wildlife and birds. In addition to that, tourists can also visit a beautiful village full of warm, open people and see cultural artifacts such as burial jars and wooden coffins. Activities which can be done at Chi Phat go from single and multi day mountain biking and trekking and traditional boat trips, to forest camping, wildlife and bird watching and village explorations. (Credit to Wildlife Alliance) Date: 30th-31st Jul 2022 Duration: 1 night 2 days (Weekend) Price: $100.99 (chilling out and motorbike trip) Day 1: - Departure at 4:30am in front of National Pediatric Hospital -Breakfast and Coffee Break along the ways-Reached at Chipat community -Check in your homestay (about 3km from community) -Install the tents -Lunch Time there -Prepare stuffs to Ou Tek Vet Waterfall and Chhay Khpos -Swimming and relax -Back to campsite -Dinner gathering -Sharing session by leader there ;Day2: -Get up at 6:30am -Trek to Shaved Mountain to see sunrise there. -Enjoying breakfast and coffee there -Take rafting near homestay -Having lunch there -Return to Phnom Penh Include: Transportation, Tent for 2 people, Entrance Fee, Motorbike, sleeping pad, 4 meals, coffee, communities fee, snack, refilling water, water 20L to refill and motorbike (Drive own). Exclude Insurance, soft drink, personal expense, breakfast at day 1 and dinner at day2 Personal Stuffs should bring with:Reusable lunch box, short spoon, reusable bottle(1.5L up), coffee cup, hiking shoes, flip flop, raincoat, hiking backpack,headlight, masks, and washing sanitizing, sleeping bag, 4 sets of clothes (Swimming), Scarf and personal needs.Contact us via 0312222168, 012778 679, Thanks for your booking.</p>
+                        <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $125.99 </span><span id="code" style="color: red;font-weight: bold;">Code: P213</span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col col-md-3">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('ទៅលេងអារ៉ែង $129.99', '​​👉27-28/1/24 ឬ 10-11/2/2024🎵រដូវរំហើយជាមួយ​នឹង​កញ្ចប់​កំសាន្ត 1យប់ 2ថ្ងៃ ទៅលេងអារ៉ែង ត្រឹមតែ $129.99 ក្នុង 1នាក់​​ ដោយ​មិន​បាច់​បារម្ភ​ទាំង​​ការ​ធ្វើ​ដំណើរ​ អាហារ និង​ការ​ស្នាក់នៅ។😍ការ​ផ្ដល់​ជូន​ពិសេស​ក្នុង​កញ្ចប់ Tour ​នេះ​មាន​៖- ធ្វើ​ដំណើរ​ជាមួយ​រថយន្ត ២៥ កៅអី- អាហារ 5 ពេល- បន្ទប់​ស្នាក់​នៅ​ម៉ាស៊ីន​ត្រជាក់- កីឡា​កម្សាន្ត 5 ប្រភេទតែ​ប៉ុណ្ណេះ​ចាំ​បាច់​មាន​អ្នក​ជូន​អី​ទៀត បើ​មាន admin អារ៉ែង ខេមភីង ជូន​ដើរ​លេង​ហើយ​ហ្នឹង​។😍ព័ត៌មាន​បន្ថែម​ការ​កក់​៖ 090282292 ឬ​តាម​តេឡេក្រាម https://t.me/arengcamping​ ', '$129,99 ', ['https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/418949620_851266387009531_3536236875264391736_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=tVoCvulUW6kQ7kNvgGIi8es&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AqoDiZwbX2x8iGM0wy_mWAS&oh=00_AYARc0p1rgXKO1bTybzoJ1DUNK3rvHTtoFln1YBRlybPPw&oe=66E98501 ', '​https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/418951692_851266410342862_1299033116427937464_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7ceGtCBzhesQ7kNvgEx0p6_&_nc_ht=scontent-bkk1-1.xx&_nc_gid=Aycpp4nTWYlvw_liQujavki&oh=00_AYAQ1UUMj1TJ9ubkaxXR8vFzE1EO8reMgw-LtMxfr_j_4A&oe=66E97F7D​ ',' https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/418438825_851267123676124_4712636528534555535_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MUnXRu5pQU8Q7kNvgGKtA1R&_nc_ht=scontent-bkk1-2.xx&oh=00_AYA7Shjx34Rrs7KLVqrS21sBQld0UDOEfgv99iLVDOLt3A&oe=66E9986A'])">
+                    <img src=" https://www.csndaily.com/wp-content/uploads/2023/03/photo_2023-03-07_08-45-15-1024x858.jpg" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title">ទៅលេងអារ៉ែង $129.99 </h5>
+                        <p class="card-text  text text-truncate">👉27-28/1/24 ឬ 10-11/2/2024🎵រដូវរំហើយជាមួយ​នឹង​កញ្ចប់​កំសាន្ត 1យប់ 2ថ្ងៃ ទៅលេងអារ៉ែង ត្រឹមតែ $129 ក្នុង 1នាក់​​ ដោយ​មិន​បាច់​បារម្ភ​ទាំង​​ការ​ធ្វើ​ដំណើរ​ អាហារ និង​ការ​ស្នាក់នៅ។😍ការ​ផ្ដល់​ជូន​ពិសេស​ក្នុង​កញ្ចប់ Tour ​នេះ​មាន​៖- ធ្វើ​ដំណើរ​ជាមួយ​រថយន្ត ២៥ កៅអី- អាហារ 5 ពេល- បន្ទប់​ស្នាក់​នៅ​ម៉ាស៊ីន​ត្រជាក់- កីឡា​កម្សាន្ត 5 ប្រភេទតែ​ប៉ុណ្ណេះ​ចាំ​បាច់​មាន​អ្នក​ជូន​អី​ទៀត បើ​មាន admin អារ៉ែង ខេមភីង ជូន​ដើរ​លេង​ហើយ​ហ្នឹង​។😍ព័ត៌មាន​បន្ថែម​ការ​កក់​៖ 090282292 ឬ​តាម​តេឡេក្រាម https://t.me/arengcamping</p>
+                        <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $129.99 </span><span id="code" style="color: red;font-weight: bold;">Code: P214</span></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col col-md-3">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('Koh Andet Eco Resort ', '​​Koh Andet Eco Resort, Tatai. Tatai Paradise Eco Resort (in:nй)គ្រាន់តែគិតថា បុណ្យភ្ជុំបិណ្ឌនេះ ចង់ទៅលេងតាតៃ ខេត្តកោះកុង សប្បាយចិត្តមុនបាត់ទៅហើយ ដោយសារតែ៖ ១ . បានទស្សនាឧទ្យានធម្មជាតិ ចាប់ពីផ្លូវបំបែកស្រែអំបិល រហូតមកដល់តំបន់ទេសចរណ៌ធម្មជាតិស្ទឹងតាតៃ នឹងក្រុងខេមរភូមិន្ទ។ ២ . ស្នាក់នៅស្និតស្នាល នឹងស្រូបយកខ្យល់អាកាសបរិសុទ្ធពីធម្មជាតិ នៅរីសត ឋានសួគ៌តាតៃ នឹងរីសត កោះអណ្តែត ។ល។ ៣ . ចែវក្បួន ចែវកាយ៉ាក់ មុជ នឹងហែលលេង ទឹកជ្រោះសំបូរបែប ។ ៤ . មានអាងហែលទឹក នឹងទឹកស្ទឹងធម្មជាតិ ទឹករាក់ ហើយថ្លាដូច កញ្ចក់ មើលឃើញដល់បាតដី មានសារ៉ាយធម្មជាតិដុះយ៉ាងស្អាតឥត ខ្ចោះ ។ ៥ . ទស្សនាព្រៃកោងកាងដ៍ធំល្វឹងល្វើយ នឹងប្រពន្ទ័ជីវៈចម្រុះ ភូមិ អ្នកនេសាទ កោះបារាំង កោះកុង ។ល។ ៦ . ទស្សនា ការរីកចំរើន ក្រុងខេមរភូមិន្ទ ដ៍ស្រស់ស្អាតរបស់យើង ជា ខេត្តកំពុងមានការអភិវឌ្ឍត្តខ្លាំងលើវិស័យអេកូទេសចរណ៍ ។អរគុណ​ ', ' $100.99', [' https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/07/38/e7/photo6jpg.jpg?w=700&h=-1&s=1', ' https://cf.bstatic.com/xdata/images/hotel/max1024x768/119384647.jpg?k=342de6b1714edfd7557f1f2a80625f99b6ea3ff6ab071762bdd64720515dcc4e&o=&hp=1​ ',' https://cf.bstatic.com/xdata/images/hotel/max1024x768/389682951.jpg?k=f3d06d8286865867b83ac959995f65dacfdcfda86a79da4423b43feaa17d35b5&o=&hp=1'])">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/389660156.jpg?k=d9ed6d430a85653e65fc4f7d0f64faf0b219f8364a60e85166fd3702e7b9885b&o=&hp=1" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title"> Koh Andet Eco Resort </h5>
+                        <p class="card-text  text text-truncate">
+                            Koh Andet Eco Resort, Tatai. Tatai Paradise Eco Resort (in:nй)
+                            គ្រាន់តែគិតថា បុណ្យភ្ជុំបិណ្ឌនេះ ចង់ទៅលេងតាតៃ ខេត្តកោះកុង សប្បាយចិត្តមុនបាត់ទៅហើយ ដោយសារតែ៖
+                            ១ . បានទស្សនាឧទ្យានធម្មជាតិ ចាប់ពីផ្លូវបំបែកស្រែអំបិល រហូតមកដល់តំបន់ទេសចរណ៌ធម្មជាតិស្ទឹងតាតៃ នឹងក្រុងខេមរភូមិន្ទ
+                            ។
+                            ២ . ស្នាក់នៅស្និតស្នាល នឹងស្រូបយកខ្យល់អាកាសបរិសុទ្ធពីធម្មជាតិ នៅរីសត ឋានសួគ៌តាតៃ នឹងរីសត កោះអណ្តែត ។ល។
+                            ៣ . ចែវក្បួន ចែវកាយ៉ាក់ មុជ នឹងហែលលេង ទឹកជ្រោះសំបូរបែប ។ ៤ . មានអាងហែលទឹក នឹងទឹកស្ទឹងធម្មជាតិ ទឹករាក់ ហើយថ្លាដូច កញ្ចក់ មើលឃើញដល់បាតដី មានសារ៉ាយធម្មជាតិដុះយ៉ាងស្អាតឥត ខ្ចោះ ។
+                            ៥ . ទស្សនាព្រៃកោងកាងដ៍ធំល្វឹងល្វើយ នឹងប្រពន្ទ័ជីវៈចម្រុះ ភូមិ អ្នកនេសាទ កោះបារាំង កោះកុង ។ល។
+                            ៦ . ទស្សនា ការរីកចំរើន ក្រុងខេមរភូមិន្ទ ដ៍ស្រស់ស្អាតរបស់យើង ជា ខេត្តកំពុងមានការអភិវឌ្ឍត្តខ្លាំងលើវិស័យអេកូទេសចរណ៍ ។
+                            អរគុណ  </p>
+                        <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $100.99 </span><span id="code" style="color: red;font-weight: bold;">Code: P222</span></span>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 7 -->
+             <div class="col col-md-3">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails(' Jet`s Oudom Resort ', '​  Jet`s Oudom Resort - Sre Ambel (im:й) ជិតភ្ជុំបិណ្ឌធំហើយ! បើអត់ដឹងកាន់ដៃអូនទៅណា កាន់ដៃអូនទៅ ជេតស៍ ឧត្ដម រីស៊ត ស្រែអំបិល ខេត្តកោះកុងតែម្តងទៅ? no កក់បន្ទប់អោយហើយទៅ! ធម្មជាតិកោះកុង ស្អាតខ្លាំងណាស់ តោះៗសាកថ្មអោយជីវិតនៅ Jet`s Oudom Resort បន្តិចបងប្អូន រីហ្សតគឺជាប្រភេទបឹងហ្គាឡូក្បែរមាត់ទឹកមានប្រភេទ គ្រែមួយ និងគ្រែ ពីរ បើចង់ជប់លៀងជាមួយមិត្តភក្តិ ក្រុមការងារ គ្រួសារ នាំCrushទៅ ផង ថតរូបស្អាតៗ ជិះទូក ស្ទួចត្រី ញាំគ្រឿងសមុទ្រ BBQ ផឹកប៊ីយែ ត្រជាក់ៗ អង្គុយមើលថ្ងៃលិច ក្លែមបរិយាកាសស្រស់ស្រាយជាមួយ ទឹកតាមដងព្រែក និងទេសភាពភ្នំរុំព័ទ្ធដោយពពក ជាប់អ័ព្ទដ៏ស្រស់ ត្រកាល (ទទំនាក់ទំនងកក់បន្ទប់ | Reservation: 096 5454 608 / 085 45 46 08 | E: booking@jetoudomresort.com ● ទីតាំង នៅចំកណ្តាលក្រុង/ស្រុកស្រែអំបិល ខេត្តកោះកុង ចំងាយ150មែត្រ ខាងឆ្វេងស្ពានស្រែអំបិល។Location here: https://bit.ly/jetoudomresort', ' $79.99 ', [' https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/54/a4/f6/jet-s-oudom-resort.jpg?w=700&h=-1&s=1 ', ' https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/54/a4/a1/jet-s-oudom-resort.jpg?w=700&h=-1&s=1 ','https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/54/a5/1a/jet-s-oudom-resort.jpg?w=700&h=-1&s=1'])">
+                    <img src="https://i.ytimg.com/vi/wddq5cyouLU/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEUgWChlMA8=&rs=AOn4CLBhdsyNq2Uoag-YJEWBvtY3cmPcEw" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet's Oudom Resort </h5>
+                        <p class="card-text  text text-truncate"> Jet`s Oudom Resort - Sre Ambel (im:й) ជិតភ្ជុំបិណ្ឌធំហើយ! បើអត់ដឹងកាន់ដៃអូនទៅណា កាន់ដៃអូនទៅ ជេតស៍ ឧត្ដម រីស៊ត ស្រែអំបិល ខេត្តកោះកុងតែម្តងទៅ? no កក់បន្ទប់អោយហើយទៅ! ធម្មជាតិកោះកុង ស្អាតខ្លាំងណាស់ តោះៗសាកថ្មអោយជីវិតនៅ Jet's Oudom Resort បន្តិចបងប្អូន រីហ្សតគឺជាប្រភេទបឹងហ្គាឡូក្បែរមាត់ទឹកមានប្រភេទ គ្រែមួយ និងគ្រែ ពីរ បើចង់ជប់លៀងជាមួយមិត្តភក្តិ ក្រុមការងារ គ្រួសារ នាំCrushទៅ ផង ថតរូបស្អាតៗ ជិះទូក ស្ទួចត្រី ញាំគ្រឿងសមុទ្រ BBQ ផឹកប៊ីយែ ត្រជាក់ៗ អង្គុយមើលថ្ងៃលិច ក្លែមបរិយាកាសស្រស់ស្រាយជាមួយ ទឹកតាមដងព្រែក និងទេសភាពភ្នំរុំព័ទ្ធដោយពពក ជាប់អ័ព្ទដ៏ស្រស់ ត្រកាល (ទទំនាក់ទំនងកក់បន្ទប់ | Reservation: 096 5454 608 / 085 45 46 08 | E: booking@jetoudomresort.com ● ទីតាំង នៅចំកណ្តាលក្រុង/ស្រុកស្រែអំបិល ខេត្តកោះកុង ចំងាយ150មែត្រ ខាងឆ្វេងស្ពានស្រែអំបិល។Location here: https://bit.ly/jetoudomresort</p>
+                        <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $79.99 </span><span id="code" style="color: red;font-weight: bold;">Code: P249</span></span>
+                    </div>
+                </div>
+            </div>
+             <!-- Card 8 -->
+             <div class="col col-md-3">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails(' ', 'អូរទឹកវេទ នៅជីផាត (កោះកុង) តោះ រុករកតំបន់ទេសចរណ៍ថ្មីៗ!  - អូរទឹកវេទ ឬឆាយទឹកវេទគឺមានទីតាំងនៅឃុំជីផាត ស្រុកថ្មបាំងខេត្តកោះកុង។ ៤ ដើម្បីទៅដល់ទីនោះបានគឺយើងត្រូវជួលម៉ូតូនៅក្នុងភូមិ1=10$/ ១ថ្ងៃ បន្ទាប់មកគឺត្រូវឆ្លងដរខ្នាតតូចទៅមក៤០០០៛/១ម៉ូតូ ហើយបន្ត ជិះតាមផ្លូវគយគន់ព្រៃព្រឹក្សា ខ្លះៗ ដួលខ្លះ អីចឹងហាំនិយាយពីថាសប្បាយបែកខ្ទះស ជាមួយនឹងការកាត់ផ្កាកកាត់កន្លែងរអិល ” ពេលទៅដល់យើងនឹងឃើញនូវទស្សនីយភាពវាលទឹក១ដ៏ធំ នឹង ចុះទៅក្រោមបន្តិចយើងនឹងឃើញនូវទឹកធ្លាក់រាងរង្វង់ព្រះចន្ទនោះ ហើយគឺគេហៅថា អូរទឹកវេទ ឬឆាយទឹកវេទ ', ' $89.99 ', [' https://asset.cambodia.gov.kh/provincial/sites/12/2020/09/FB_IMG_1599796480834.jpg  ', '  https://4.bp.blogspot.com/-viqsTy1gaS0/XSlEkLNgpzI/AAAAAAAAVaI/aR-yJ-mt3NQU8XnqLgJRhcbYttkbHBd_QCLcBGAs/s1600/66325892_370189733570250_1994290032931766272_n.jpg ',' https://4.bp.blogspot.com/-XQWX-T0kodA/XSlElHzmsMI/AAAAAAAAVaU/SlGlT6rXRaAGv02WCsVs--Yukv40JkuTQCLcBGAs/s1600/66353826_370189896903567_1573024427765923840_o.jpg'])">
+                    <img src=" https://www.popular.com.kh/wp-content/uploads/2019/07/noeun-134062019-1.jpg " style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title">អូរទឹកវេទ នៅជីផាត  </h5>
+                        <p class="card-text  text text-truncate">អូរទឹកវេទ នៅជីផាត (កោះកុង) តោះ រុករកតំបន់ទេសចរណ៍ថ្មីៗ!  - អូរទឹកវេទ ឬឆាយទឹកវេទគឺមានទីតាំងនៅឃុំជីផាត ស្រុកថ្មបាំងខេត្តកោះកុង។ ៤ ដើម្បីទៅដល់ទីនោះបានគឺយើងត្រូវជួលម៉ូតូនៅក្នុងភូមិ1=10$/ ១ថ្ងៃ បន្ទាប់មកគឺត្រូវឆ្លងដរខ្នាតតូចទៅមក៤០០០៛/១ម៉ូតូ ហើយបន្ត ជិះតាមផ្លូវគយគន់ព្រៃព្រឹក្សា ខ្លះៗ ដួលខ្លះ អីចឹងហាំនិយាយពីថាសប្បាយបែកខ្ទះស ជាមួយនឹងការកាត់ផ្កាកកាត់កន្លែងរអិល ” ពេលទៅដល់យើងនឹងឃើញនូវទស្សនីយភាពវាលទឹក១ដ៏ធំ នឹង ចុះទៅក្រោមបន្តិចយើងនឹងឃើញនូវទឹកធ្លាក់រាងរង្វង់ព្រះចន្ទនោះ ហើយគឺគេហៅថា"អូរទឹកវេទ ឬឆាយទឹកវេទ" </p>
+                        <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $89.99 </span><span id="code" style="color: red;font-weight: bold;">Code: P250</span></span>
+                    </div>
+                </div>
+            </div>
+    </div>
+   </div><br>
+    <!-- Containers for each dropdown item -->
+   <div  class="container">
+     <div id="container1" class="dropdown-container " style="display: none;">
+        <h4​ style="font-family: 'Battambang';margin:8px 0px;font-size: 20px;color:rgb(255, 255, 255);">សូមស្វាគមន៏មកកាន់ទំព័រដំណើរកម្សាន្តក្នុងប្រទេសកម្ពូជា ក្នុង<span style="font-weight: 600;font-size: 25px;color: rgb(255, 255, 255);">ខេត្តកំពត</span></h4><br>
+         <div class="row mt-2">
+                    <!-- Card 1 -->
+                    <div class="col col-md-3">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('​ ឆ្នេរអង្កោល', 'The hot months are the perfect time to relax on the beach. Saturday, Sunday, weekend can be spent with friends or family, camping, barbecue, sea play, sunset will make you rich Feel refreshed and relieved to visit these beaches, which are not far from Phnom Penh. Here are the five quietest beaches for camping with friends and family in the summer​ ', '$89.99', [' https://infotainment.ams.com.kh/wp-content/uploads/2022/04/Untitled-1-5.png', ' https://www.vodkhmer.news/wp-content/uploads/2021/12/Kep-2.jpg','https://lh5.googleusercontent.com/p/AF1QipOjqhnfmtALNhMksXCf22hDBG3BjKyuQ1NK8Wf6=s1600 '])">
+                            <img src="https://lh5.googleusercontent.com/p/AF1QipOjqhnfmtALNhMksXCf22hDBG3BjKyuQ1NK8Wf6=s1600" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                            <div class="card-body">
+                                <h5 class="card-title">ឆ្នេរអង្កោល</h5>
+                                <p class="card-text  text text-truncate"> The hot months are the perfect time to relax on the beach. Saturday, Sunday, weekend can be spent with friends or family, camping, barbecue, sea play, sunset will make you rich Feel refreshed and relieved to visit these beaches, which are not far from Phnom Penh. Here are the five quietest beaches for camping with friends and family in the summer: </p>
+                                <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $89,99 </span><span id="code" style="color: red;font-weight: bold;">Code: P109</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col col-md-3">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('  Yellow Sun Kampot  ','Yellow Sun Kampot (in)រីករាយចុងសប្តាហ៍ ENJOY AND FREE WATCH SUNSET! YELLOW SUN KAMPOT 4km ពីក្រុងកំពត បរិយាកាស ស្រស់ស្រាយ អនាម័យ ល្អសំរាប់ចុងសប្តាហ៍ជាមួយមិត្តភក្តិ ម្ហូបអាហារឆ្ងាញ់ បែបខ្មែរ បទេស ភេសជ្ជៈ តម្លៃសមរម្យ។[ ចុងសប្តាហ៍រឺថ្ងៃធម្មតាតម្លៃមិនប្រែប្រួល សមរម្យI ł Yellow Sun Bungalow & Restaurant ជាកន្លែងកំសាន្ត សាមញ្ញ បែបធម្មជាតិ ស្រស់ស្រាយ Chill Chill Good Vibe | បឹងហ្គាឡូ ជាប់មាត់ទឹក18$ 1bed (2នាក់)| បឹងហ្គាឡជាប់មាត់ទឹក 2bed 22$ (4នាក់) | បឹងហ្គាឡូជាប់សួន 1bed 12$ បឹងហ្គាឡូលើសួន 2bed 18$Dormitory 1គ្រែ $49.99 សំរាប់ព័ត៌មាន ឬកាកក់ Booking: +855 10663001/ +855 86 988 833 Telegram: +855 86 988 833/ +855 16733311 Iss Google Map: https://maps.app.goo.gl /YQzCJVwwViQ54j4J7', '$49.99 ', ['https://cf.bstatic.com/xdata/images/xphoto/max500_ao/185766486.jpg?k=508e683baa35bda322d410f4ee6a6bb671ed579cfec2ce060c0e56f913a1bd04&o= ', ' https://cdn-img.readytotrip.com/t/1024x768/content/8b/d6/8bd6a69ab1a1a482dc90cbe9aaf0d4f2fcd6283d.jpeg',' https://cf.bstatic.com/xdata/images/hotel/max1024x768/388642881.jpg?k=868b8c5ce2f5b854511bf8612c6361f76d51aea41e0af290b39d919acaeb9d5f&o=&hp=1'])">
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/bc/d5/6a/yellow-sun-hostel.jpg?w=700&h=-1&s=1" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                            <div class="card-body">
+                                <h5 class="card-title"> Yellow Sun Kampot  </h5>
+                                <p class="card-text  text text-truncate">Yellow Sun Kampot (in)រីករាយចុងសប្តាហ៍ ENJOY AND FREE WATCH SUNSET! YELLOW SUN KAMPOT 4km ពីក្រុងកំពត បរិយាកាស ស្រស់ស្រាយ អនាម័យ ល្អសំរាប់ចុងសប្តាហ៍ជាមួយមិត្តភក្តិ ម្ហូបអាហារឆ្ងាញ់ បែបខ្មែរ បទេស ភេសជ្ជៈ តម្លៃសមរម្យ។[ ចុងសប្តាហ៍រឺថ្ងៃធម្មតាតម្លៃមិនប្រែប្រួល សមរម្យI ł Yellow Sun Bungalow & Restaurant ជាកន្លែងកំសាន្ត សាមញ្ញ បែបធម្មជាតិ ស្រស់ស្រាយ Chill Chill Good Vibe | បឹងហ្គាឡូ ជាប់មាត់ទឹក18$ 1bed (2នាក់)| បឹងហ្គាឡជាប់មាត់ទឹក 2bed 22$ (4នាក់) | បឹងហ្គាឡូជាប់សួន 1bed 12$ បឹងហ្គាឡូលើសួន 2bed 18$Dormitory 1គ្រែ $49.99 សំរាប់ព័ត៌មាន ឬកាកក់ Booking: +855 10663001/ +855 86 988 833 Telegram: +855 86 988 833/ +855 16733311 Iss Google Map: https://maps.app.goo.gl /YQzCJVwwViQ54j4J7</p>
+                                <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $49.99 </span><span id="code" style="color: red;font-weight: bold;">Code: P101</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col col-md-3">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('កំពត កែប ',' កក់ធួរ ទៅកំពត កែប មួយយប់ជាមួយ ទេសចរណ៍ ព្រៃភ្នំ-Flash Tour ទៅច្រើនកន្លែងណាស់! ទឹកធ្លាក់ព្រែកត្នោត ទឹកធ្លាក់វាលពួច ល្អាងភ្នំកំពង់ត្រាច ល្អាងភ្នំឈ្ងោក ឧទ្យានដងព្រែក!គេង១យប់(១៥-១៦តុលា) ម្នាក់55.99$ ផ្តល់ជូនអាហារ៤ពេល ភេក្ខជៈ ទឹកសុទ្ធ, រថយន្តធ្វើដំណើរពេញទាំង២ថ្ងៃ បន្ទប់គេង កន្លែងទស្សនា កម្សាន្ត៖ ចូលទស្សនាលេងនៅល្អាងភ្នំឈ្ងោក មានកូនប្រាសាទបុរាណ នៅក្នុងហ្នឹងចូលញាំភេស្ឋជៈ ថតរូបលេងនៅស្ពានយោល ក្នុងរីសត Green Valley Veal Pouch ឡើងភ្នំទៅងូតទឹកលេងនៅទឹកធ្លាក់វាលពួច មានច្រើន ដំណាក់ កំពស់៥ម ២០ម ៦០ម ងូតលេងសប្បាយ ទឹកថ្លាខៀវ ស្អាត ទេសភាពព្រៃភ្នំស្អាត ដើរទៅងូតទឹក លោតទឹកលេងនៅទឹកធ្លាក់អន្លង់ខៀវ ទឹកថ្លា ខៀវ ស្អាត ចូលលេងនៅល្អាងភ្នំកំពង់ត្រាច ជិះខ្សែររ៉តលេងនៅឧទ្យានដងព្រែក និងជិះទូកលេង ចូលថតរូបលេងនៅសមុទ្រ រីសតក្តាតឡាតង់ ចូលញាំភេស្ឋជៈនៅដំណាក់កាហ្វេ កែប ផ្សារក្តាម !! ចេញដំណើរពីភ្នំពេញទៅ នៅថ្ងៃសៅរ៍ទី១៥តុលា ម៉ោង៥:៣០នាទីព្រឹក ជួបជុំគ្នាឡើងឡាននៅមុខមន្ទីរពេទ្យកុមារជាតិ។ ទំនាក់ទំនងកក់សំបុត្រ៖ 012416289-081626522', '$55.99 ', ['https://cnc.com.kh/news/laravel-filemanager/photos/30/62a94bfe4a682.jpg  ', 'https://infotainment.ams.com.kh/wp-content/uploads/2022/05/Untitled-1-31.jpg  ',' https://oss4.tnaot.com/tnaot/image/2021/05/20/570e37787add4a31ac81d5249b557dca.jpg '])">
+                            <img src="https://oss6.tnaot.com/tnaot/image/2022/09/29/080b1b79806b44a2a35e1014e99e5eb3.jpg " style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                            <div class="card-body">
+                                <h5 class="card-title​"> កំពត កែប</h5>
+                                <p class="card-text  text text-truncate"> </p>
+                                <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $55.99 </span><span id="code" style="color: red;font-weight: bold;">Code: P103</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col col-md-3">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails(' Moly Resort ',' Moly Resort - ម៉ូលី រីស៊ត កំពត​​ សួស្តីបងប្អូនទាំងអស់គ្នាដែលមានគំរោងដំណើរកំសាន្តទៅលេង ខេត្តកំពត បងៗកំពុងតែស្វែងរកកន្លែងគេងស្អាតនឹងមាន ទេសភាពស្អាតកប់ កុំភ្លេច Moly Resort - ម៉ូលី រីស៊ត កំពត​ !​​យើងមានបន្ទប់ជាច្រើនប្រភេទមានអាងហែលទឹកធំទូលាយនិង មានកន្លែងសម្រាប់ថតរូបភាពដ៏ត្រជាក់ភ្នែកជាច្រើន មានកន្លែងស្ទួចត្រី និងកន្លែងអាំងសាច់ដ៏ធំ • PROMOTION 50% ញាក់បស់គេហំ ២៥ o • សម្រាប់ ៥បន្ទប់ដំបូង • ទីតាំងលើផ្លូវទឹកឈូហួសស្ពានរថភ្លើង២០០ម៉ែតនៅស្តាំដៃ លេខសម្រាប់ខលកក់ : 012 23 23 24 / 096 99 34 333 នៅត្រឹមកំពតទេ មិនបាច់ទៅស្រុកគេនាំអស់លុយច្រើនទេណា បងប្អូន ', '$69,99  ', [' https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/286874509_4964944110299448_8565573428457526463_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=KRRseDyj0OEQ7kNvgHSpuX0&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AQ0SCrp08CwY7JtCtosTBlI&oh=00_AYAwtJeViAK3Z2rxceNQpgVwjm-3IqB6i3h6FAkNMxUgpQ&oe=66E9AD6B  ', ' https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/286912051_4964944093632783_502507984193809285_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=HTmZCVT5lU0Q7kNvgEvnyTP&_nc_ht=scontent-bkk1-1.xx&_nc_gid=ADsOpOcwgKIoHjJUBqVBqpU&oh=00_AYDjF0u31WRkan5jUQVso3bh7mpAvdVTljneTXXBFd4abg&oe=66E99C65  ','https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/286933549_4964944633632729_5896577841245697345_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=TGm4nbnBrUIQ7kNvgFaQxDs&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AH1AHDkXhJb_SN4BBhcWWT7&oh=00_AYBL4wbyFok2eJxoTaSMrDG_CXfaGDyKCCMNV7h52QyAkw&oe=66E9C342 '])">
+                            <img src=" https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/287777409_4964944120299447_6674661675839504972_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=icOczqG7448Q7kNvgGyuGXE&_nc_ht=scontent-bkk1-1.xx&_nc_gid=AWo3FKh1QrTw99nJKgm0FQ3&oh=00_AYCgfLuH_SNeDlaO0qmdzb6g3Zp3P2yimnIb1TsI3o3TbA&oe=66E9BE99" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                            <div class="card-body">
+                                <h5 class="card-title​">Moly Resort </h5>
+                                <p class="card-text  text text-truncate"> Moly Resort - ម៉ូលី រីស៊ត កំពត
+                                    សួស្តីបងប្អូនទាំងអស់គ្នាដែលមានគំរោងដំណើរកំសាន្តទៅលេង ខេត្តកំពត បងៗកំពុងតែស្វែងរកកន្លែងគេងស្អាតនឹងមាន ទេសភាពស្អាតកប់ កុំភ្លេច Moly Resort - ម៉ូលី រីស៊ត កំពតណា!... </p>
+                                <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $ </span><span id="code" style="color: red;font-weight: bold;">Code: P104</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card ៥ -->
+                    <div class="col col-md-3">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('ក្រៀល (ខេត្តកំពត) ​','​ ក្រៀល_The_Crane_Resort (ខេត្តកំពត) រីករាយពិធីបុណ្យភ្ជុំបិណ្ឌខាងមុខនេះ សូមកុំភ្លេច ក្រៀល_the_crane_resort. ដែលមានបរិយាកាសល្អ សំរាប់បងប្អូនបង្កើតភាពសប្បាយរីករាយ ជាមួយក្រុមគ្រួសារ ឬមិត្តភក្តិ មានទាំងម៉ូតូកង់បួន កូនឡាន និងឡាន ស៊ីបសំរាប់ជិះទៅកំសាន្តភ្នំទឹកជិតព្រំប្រទល់ខ្មែរ-វៀតណាមដែលអម ទៅដោយទេសភាពស្អាតប្លែកភ្នែកទៀតផង មានតម្លៃសមរម្យ។ ទីតាំង: នៅភូមិកោះចំការ ឃុំបឹងសាលាច្បង ស្រុក កំពង់ត្រាច ,ខេត្តកំពត  https://maps.app.goo.gl/YNSu8vGxuQh4dUSW9 Tell:012516179, 016689974', '$50.99  ', [' https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/305128663_516214340508740_5309984964711268123_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=CokLebbilCEQ7kNvgFfKBBM&_nc_ht=scontent-bkk1-2.xx&oh=00_AYCrbks138La6y6CafCUY5L8Ak53ED9cbJc5KcIWYD1rKQ&oe=66E9A1B2 ', ' https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/306286296_516214090508765_4741354191516228851_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MJhuZ8woDM4Q7kNvgEahpOB&_nc_ht=scontent-bkk1-1.xx&_nc_gid=AcgpzTTGXlmVpUxWQ7z37nT&oh=00_AYDOKuXYMpoUviVtU2uaPKLQ086cjOol3iNvhh2B6e8QQw&oe=66E9A9DA  ',' https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/306351827_516214257175415_1473596022473832075_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4t8hQsh5vnAQ7kNvgE-Tein&_nc_ht=scontent-bkk1-1.xx&oh=00_AYAhc3Ns9jxkfgXOpWJYM9C1fRI7XAQQcppgMTb4-1aMlA&oe=66E9BF1A'])">
+                            <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/305487475_516213827175458_4623709833274945607_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mSLmyFERnGUQ7kNvgFLDNYB&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AEnCl_uHYt95pKp5bRQQyC-&oh=00_AYDjt4DP112ticIGqLLOu_BB4dNTiKY-PljDsUc-1F0Few&oe=66E9D465  " style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                            <div class="card-body">
+                                <h5 class="card-title​"> ក្រៀល (ខេត្តកំពត) </h5>
+                                <p class="card-text  text text-truncate">រីករាយពិធីបុណ្យភ្ជុំបិណ្ឌខាងមុខនេះ សូមកុំភ្លេច ក្រៀល_the_crane_resort...</p>
+                                <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $ </span><span id="code" style="color: red;font-weight: bold;">Code: P106</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="col col-md-3">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails(' ទឹកធ្លាក់ឱម៉ាល់ (ខេត្តកំពត) ​','​  ទឹកធ្លាក់ឱម៉ាល់ (ខេត្តកំពត) តោះ! ទៅលេង ទឹកធ្លាក់ឱម៉ាល់ជាមួយ Sunday Trip-សាន់ដេ ទើប! • ទឹកធ្លាក់ឱម៉ាល់ មានទីតាំងស្ថិតនៅ ភូមិស្នំប្រាំពីរ ឃុំម៉ាក់ប្រាង្គ ស្រុកទឹកឈូ ខេត្តកំពត ។ ♦ យើងអាចធ្វើដំណើរដោយជិះម៉ូតូ កង់ ឬដើរដោយថ្មើរជើង។ នៅតាមផ្លូវយើងអាចទស្សនាបាននូវទិដ្ឋភាពព្រៃឈើធម្មជាតិដ៏ ខៀវស្រងាត់ និងអាចទស្សនាចំការដំណាំជាច្រើននៅតាមដងផ្លូវ ជាពិសេសចំការធូរេនដែលដំណាំ តំណាងខេត្តកំពត។”តើខ្ញុំនឹងទៅកម្សាន្តនៅទីណា? សកម្មភាពណាខ្លះ សម្រាកនៅ កន្លែងណា ជ្រុងណាស្អាត តោះទៅមើលទាំងអស់គ្នា... ។', '$49.99  ', [' https://oss3.tnaot.com/tnaot/image/2021/04/26/0650e87a211c47508625c0813bd4205f.jpg ', '  https://scontent-bkk1-1.xx.fbcdn.net/v/t1.6435-9/105904095_117797886646808_922804442509546567_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=LZu-S4O08jgQ7kNvgFr2b7g&_nc_ht=scontent-bkk1-1.xx&_nc_gid=Atv-cU36oTr5_xk_GT-BOuK&oh=00_AYAgfJpzkbQZpcVYdn1FDVODX8pLWIBLi2qcNLzAOfdnMA&oe=670B6473 ',' https://scontent-bkk1-2.xx.fbcdn.net/v/t1.6435-9/80190935_117798173313446_6779197170626944032_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=8Zeflh_0AU8Q7kNvgFnxsuK&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AMiTpU_3bs9z7E18T-8Wdsy&oh=00_AYAhrm0tb2DzhcR796yQyXpl6rWf-_VumDnrWcIZQD5X6Q&oe=670B568B '])">
+                            <img src="https://i.ytimg.com/vi/D-qZAUFFnf4/maxresdefault.jpg " style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                            <div class="card-body">
+                                <h5 class="card-title​"> ទឹកធ្លាក់ឱម៉ាល់ (ខេត្តកំពត) </h5>
+                                <p class="card-text  text text-truncate"> តោះ! ទៅលេង ទឹកធ្លាក់ឱម៉ាល់ជាមួយ Sunday Trip-សាន់ដេ ទើប!...</p>
+                                <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $45.99 </span><span id="code" style="color: red;font-weight: bold;">Code: P141</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="col col-md-3">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails(' ជិះរថភ្លើង ពីភ្នំពេញ-កំពត​','​ ជិះរថភ្លើង ពីភ្នំពេញ-កំពត ម្នាក់ឯងមានអីមិនល្អ តោះ....!.. ចំណាយពេល4 ម៉ោងទៅកំពតដោយការជិះរថភ្លើងមានអីមិនល្អ ទស្សនាទេសភាព ញាំអាហារលើរថភ្លើង និយាយគ្នាលេងជាមួយមិត្ត ថ្មី ស្រូបយកខ្យល់អាកាសនៃវាលស្រែដ៏ខៀវស្រងាត់ ។ រួចហើយ ក៏ទៅលេងទឹកធ្លាក់មួយកន្លែងដែលមានឈ្មោះទទួលបានអារម្មណ៍ថ្មីពីការជិះរថភ្លើង ទឹកធ្លាក់តាដា', '$45.99', [' https://cnc.com.kh/news/laravel-filemanager/photos/30/62552f4f16967.jpg ', '  https://scontent-bkk1-1.xx.fbcdn.net/v/t1.6435-9/120046063_3068433109946187_906695839689796033_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=9Cm0pBAtUcMQ7kNvgFBu7TI&_nc_ht=scontent-bkk1-1.xx&_nc_gid=A1tZZ32ENYAjql4bJL2Uoqj&oh=00_AYBYXzqiZtx2UdN9MdWHQcp0kJ8OyTHP9PdRLUFuYd2K4A&oe=670B507D ','  https://scontent-bkk1-2.xx.fbcdn.net/v/t1.6435-9/119908350_3068433496612815_4812689839417851692_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=uAzFfgwqs5kQ7kNvgG-22kb&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AkWxfDJqmTKQFC8jjrv2rZu&oh=00_AYDR1D4rsS9GRJjNKUq7x_-wWLJRGN4joanac1qWkfxY9w&oe=670B4C3F '])">
+                            <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t1.6435-9/119950986_3068433136612851_4289831948286472662_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=YXEXoKoPkmAQ7kNvgF0_qq4&_nc_ht=scontent-bkk1-1.xx&_nc_gid=AGMwgI0sHd4ELFq1frlpUUS&oh=00_AYDohi0_fZJr2vAIYqF559kvI_WjqZuSDsIJNhRYwG8_-A&oe=670B52FC" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                            <div class="card-body">
+                                <h5 class="card-title​"> ជិះរថភ្លើង ពីភ្នំពេញ-កំពត</h5>
+                                <p class="card-text  text text-truncate"> ជិះរថភ្លើង ពីភ្នំពេញ-កំពត ម្នាក់ឯងមានអីមិនល្អ តោះ....!..</p>
+                                <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $45.99 </span><span id="code" style="color: red;font-weight: bold;">Code: P142</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="col col-md-3">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('ឧទ្យានដងព្រែក (ខេត្តកំពត) ​','​ ឧទ្យានដងព្រែក (ខេត្តកំពត) តោះធ្លាប់ទៅលេងឧទ្យានដងព្រែកកំពតឫនៅ? ពេញនិយមក្នុងខេត្តកំពតជិះកាយ៉ាក ញ៉ាំម្ហូបអ្នកកំពត និងផ្លែឈើ កន្លែង  ', '$45.99 ', [' https://i.ytimg.com/vi/dI_aulQ-QmE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB80zWat05LjLjkwkrTgE4_0QwXqw ', ' https://infotainment.ams.com.kh/wp-content/uploads/2022/05/Blue-Coming-Soon-Banner-Landscape-2-scaled.jpg ',' https://infotainment.ams.com.kh/wp-content/uploads/2022/05/281739838_1862844213914640_2398160816515425297_n.jpg'])">
+                            <img src="https://i.ytimg.com/vi/dI_aulQ-QmE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB80zWat05LjLjkwkrTgE4_0QwXqw " style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                            <div class="card-body">
+                                <h5 class="card-title​"> ឧទ្យានដងព្រែក (ខេត្តកំពត)</h5>
+                                <p class="card-text  text text-truncate">ឧទ្យានដងព្រែក (ខេត្តកំពត)តោះធ្លាប់ទៅលេងឧទ្យានដងព្រែកកំពតឫនៅ? ពេញនិយមក្នុងខេត្តកំពតជិះកាយ៉ាក ញ៉ាំម្ហូបអ្នកកំពត និងផ្លែឈើ</p>
+                                <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $45.99 </span><span id="code" style="color: red;font-weight: bold;">Code: P143</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="col col-md-3">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('ឧទ្យានជាតិភ្នំបូកគោ (កំពត) ​','​ ឧទ្យានជាតិព្រះមុនីវង្សភ្នំបូកគោ (កំពត) តោះ! មកស្គាល់កាន់តែលំអិត និងដឹងកន្លែងទៅលេងនៅ ភ្នំបូកគោ! ឧទ្យានជាតិព្រះមុនីវង្សភ្នំបូកគោ ដែលត្រូវបានគេស្គាល់ភាគច្រើនថា ឧទ្យានជាតិបូកគោ ស្ថិតនៅក្នុងស្រុកទឹកឈូ ខេត្តកំពត។ ភ្នំបូកគោ មានកម្ពស់ប្រមាណ 1075ម៉ែត្រធៀបទៅនឹងនីវ៉ូទឹកសមុទ្រ និង មានចម្ងាយប្រមាណ 11 គីឡូម៉ែត្រពីក្រុងកំពត ទៅកាន់ជើងភ្នំ និង ចម្ងាយ32គីឡូម៉ែត្រពីជើងភ្នំដល់កំពូលភ្នំ។ ភ្នំបូកគោត្រូវបានរកឃើញ នៅឆ្នាំ1917 ដោយជនជាតិបារាំងឈ្មោះរូលួស និងត្រូវបានអភិវឌ្ឍ ឲ្យទៅជារមណីយដ្ឋានក្នុងឆ្នាំ1921។ កាលពីមុន ភ្នំបូកគោ ធ្លាប់ជាទី កន្លែងសម្រាកដ៏ល្បីល្បាញដែលធ្វើឡើងសម្រាប់តែអភិជនបារាំង និង រាជវង្សានុវង្សប៉ុណ្ណោះ។ ', '$55.99  ', [' https://cdn.sabay.com/cdn/media.sabay.com/media/Samphy-2023/August(2)/Week-(12)/64d1b03ea3f43_1691463720_medium.jpg  ', ' https://www.cnc.com.kh/news/63b3e62ba5e0b.jpeg  ',' https://www.visitkampot.info/__asset/img/article/649d5c9ee7492.jpg '])">
+                            <img src=" https://image.thmeythmey.com/pictures/2023/08/08/thumb2/aa.jpg" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                            <div class="card-body">
+                                <h5 class="card-title​"> ឧទ្យានជាតិភ្នំបូកគោ (កំពត) </h5>
+                                <p class="card-text  text text-truncate">ឧទ្យានជាតិព្រះមុនីវង្សភ្នំបូកគោ (កំពត) តោះ! មកស្គាល់កាន់តែលំអិត និងដឹងកន្លែងទៅលេងនៅ ភ្នំបូកគោ! ...</p>
+                                <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $55.99  </span><span id="code" style="color: red;font-weight: bold;">Code: P144</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="col col-md-3">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails(' សហគមន៍នេសាទកំពង់សាមគ្គី (ខេត្តកំពត) ​','​  ', '$35.99  ', [' https://i.ytimg.com/vi/xPTyMcj11B0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD8prrfqhz_uC3_NAaB4bzJ0l0diw  ', ' https://www.cnc.com.kh/news/620b168713372.jpeg ',' https://www.khmerplaces.com/storage/posts/May2019/SnxIaRVbzuixTqscnibS.jpg  '])">
+                            <img src=" https://i.ytimg.com/vi/JPwC-l4dYsg/maxresdefault.jpg " style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                            <div class="card-body">
+                                <h5 class="card-title​">សហគមន៍នេសាទកំពង់សាមគ្គី (ខេត្តកំពត) </h5>
+                                <p class="card-text  text text-truncate"> </p>
+                                <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $35.99   </span><span id="code" style="color: red;font-weight: bold;">Code: P146</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-3">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails(' ជិះទូកកាយ៉ាកដងព្រែកកំពត ​','ជិះទូកកាយ៉ាកដងព្រែកកំពត ឆ្លងឆ្នាំមិនបានទៅលេងកំពត ចូលឆ្នាំចិន ឫចូលឆ្នាំខ្មែរចាំទៅលេង ក៏មិនទាន់ហួសពេលដែរ( បច្ចុប្បន្នខេត្តកំពតគឺជាខេត្តមួយដែលពេញនិយមបំផុតសម្រាប់ លំហែកាយថ្ងៃចុងសប្តាហ៍ ឫបុណ្យទាននានាព្រោះថាខេត្តកំពតគឺ នៅមិនឆ្ងាយពីភ្នំពេញប៉ុន្មាននោះទេ ពីក្រុងភ្នំពេញទៅទីរួមខេត្តកំពតមានចម្ងាយត្រឹមតែ១៤៨គីឡូម៉ែត្របើយើងធ្វើដំណើរដោយម៉ូតូជិះ ប្រហែលជា៣ម៉ោងជាងហើយកន្លែងដើរលេងកំសាន្តភាគច្រើនគឺនៅជិតៗក្រុង ការកំសាន្តតាមរម្មណីយដ្ឋាននៅតាមដងព្រែកការជិះទូកកា យ៉ាកគឺពេញនិយយមបំផុត អ្នកដែលបានទៅលេងកំពតគួរកុំរំលងការ ជិះទូកនេះអី ជិះកាយ៉ាកប្រដេញគ្នានៅដងព្រែកពិតជាសប្បាយខ្លាំង ណាស់...​  ', '$30.99 ', [' https://www.popular.com.kh/wp-content/uploads/2019/05/KP.jpg', '  https://pppkhmer.sgp1.digitaloceanspaces.com/image/main/field/image/mangrove.jpg',' https://media-cdn.tripadvisor.com/media/photo-s/1a/4d/d7/85/asurajourney-kampongpluk.jpg '])">
+                            <img src=" https://3.bp.blogspot.com/-_LxAb4PpP7w/XM_0-RaG6KI/AAAAAAAABvE/3sOlYaWw91wgOYBVO8PhzDStUEw-fWLZwCLcBGAs/s1600/sakkarach-prek-chak-005.jpg " style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                            <div class="card-body">
+                                <h5 class="card-title​"> ជិះទូកកាយ៉ាកដងព្រែកកំពត </h5>
+                                <p class="card-text  text text-truncate"> ជិះទូកកាយ៉ាកដងព្រែកកំពត ឆ្លងឆ្នាំមិនបានទៅលេងកំពត ចូលឆ្នាំចិន ឫចូលឆ្នាំខ្មែរចាំទៅលេង ក៏មិនទាន់ហួសពេលដែរ...</p>
+                                <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $30.99    </span><span id="code" style="color: red;font-weight: bold;">Code: P147</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-3">
+                        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('រមណីយដ្ឋានកំពង់ត្រាច(ខេត្តកំពត)​','រមណីយដ្ឋានកំពង់ត្រាច (ខេត្តកំពត) សួរស្ដីបងៗខានមកលេងរមណីយដ្ឋានភ្នំកំពង់ត្រាចយូរប៉ុណ្ណា ដែរហើយតោះមកមើលរូបភាពនិងទេសភាពនៅភ្នំកំពង់ត្រាចទាំងអស់គ្នា។រមណីយដ្ឋានកំពង់ត្រាចគឺជាកន្លែងទេសចរណ៍មួយដែលមានទេសភាពនិង ល្អាងភ្នំជាច្រើនកន្លែងដែលមានភ្ញៀវជាតិនិងអន្តរជាតិ ទៅលេងកន្លង់មក ហើយកន្លែងនេះផងដែរក៏មាននៅរទេះសេះសម្រាប់ជួលអោយភ្ញៀវជិះលេងកំសាន្តផងដែរ។....', '$35.99 ', [' https://newsasiacloud.sgp1.digitaloceanspaces.com/wp-content/uploads/2024/01/18-7.jpg', '  https://oss4.tnaot.com/tnaot/image/2021/07/04/050c10de36a44d87bed41313d40ec750.jpg',' https://static.information.gov.kh/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBLzZRQlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--245fc9feb6f7246565171eb0ac98c90e6f4db1d4/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lOTVRNMU1IZzVNREFHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--30b79c7f7567bd0a04d6c485cf8a2bbc24e21d2f/img-7149.jpeg'])">
+                            <img src=" https://oss4.tnaot.com/tnaot/image/2021/07/04/c5c959ed22194d66a44be263b510997e.jpg" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                            <div class="card-body">
+                                <h5 class="card-title​">រមណីយដ្ឋានកំពង់ត្រាច(ខេត្តកំពត)</h5>
+                                <p class="card-text  text text-truncate"> រមណីយដ្ឋានកំពង់ត្រាច (ខេត្តកំពត) សួរស្ដីបងៗខានមកលេងរមណីយដ្ឋានភ្នំកំពង់ត្រាចយូរប៉ុណ្ណា...</p>
+                                <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $35.99  </span><span id="code" style="color: red;font-weight: bold;">Code: P148</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+    </div>
+    <div id="container2" class="dropdown-container" style="display: none;">
+        <h4​ style="font-family: 'Battambang';margin:8px 0px;font-size: 20px;color:rgb(255, 255, 255);">សូមស្វាគមន៏មកកាន់ទំព័រដំណើរកម្សាន្តក្នុងប្រទេសកម្ពូជា ក្នុង<span style="font-weight: 600;font-size: 25px;color: rgb(255, 255, 255);">ខេត្តព្រះសីហនុ</span></h4><br>
+     <!-- Card 1 -->
+     <div class="row mt-2">
+        <div class="col col-md-3">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('Shinta Mani Wild​', ' Shinta Mani Wild - A Bensley Collection (Sihanouk Ville)Exceptional memories at Cambodia`s conservation sanctuary - luxury hospitality meets conservation.Experience living in harmony with nature with Shinta Mani Wilds unique tented lodges. Each of the 15 luxurious tents offers ample space, luxury amenities, and awe-inspiring views of the Cardamom mountains. Find yourself awestruck with the luxurious yet sustainable interiors, enjoy soothing sounds, and relax with a view of the pristine rainforest.Contact: Telephone: +855 87 656 152  Email: wild@shintamani.com Website: shintamani.com/wild  Location: Prey Praseth Village, Ou Bak Rothed Commune, Kampong Seila District, Sihanoukville (city), Cambodia Google Map: Shinta Mani Wild - A Bensley Collection', '...', [' https://www.telegraph.co.uk/content/dam/Travel/hotels/2024/august/shinta-mani-wild-hotel-exterior-lead-image.jpg?imwidth=350%20350w', 'https://media.licdn.com/dms/image/C5112AQHjK6OLg_1nsQ/article-cover_image-shrink_600_2000/0/1583722548761?e=2147483647&v=beta&t=vVVLt1nF50ihk9qQEIzGDmZNTBo2GVjl6jTkjwEv7vc ',' https://secretlifeoffatbacks.com/wp-content/uploads/2019/08/ShintaManiWild2019-16.jpg'])">
+                <img src="https://hmdasia.com/media/pages/projects/shinta-mani-wild/82cac5887c-1718818255/elisehassey_smw24_3135-2600x-q75.webp" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">​​​ Shinta Mani Wild</h5>
+                    <p class="card-text  text text-truncate">Shinta Mani Wild - A Bensley Collection (Sihanouk Ville)... </p>
+                    <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;"> <a href="contact.html">Contact-Us</a> </span><span id="code" style="color: red;font-weight: bold;">Code: P450</span></span>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+            <div class="col col-md-3">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails(' ទឹកធ្លាក់ព្រៃនប់ (ខេត្តព្រះសីហនុ)​', ' តោះ កក់ដមនើរទៅលេងជាមួយ ទេសចរណ៍ព្រៃភ្នំ-Flash_Tour ទឹកធ្លាក់ព្រៃនប់ ម្នាក់$19.99 (១ថ្ងៃវិលល្ងាច ០៩តុលា) កន្លែងទៅ ទស្សនាលេង៖ ទឹកធ្លាក់ព្រៃនប់៖ ថតរូបលេងទេសភាពព្រៃភ្នំ ងូតទឹកជ្រោះលេង មានថ្នាក់ៗជាជណ្តើរ មានអន្លង់លោតទឹកលេង ហែលលេង ទឹកថ្លាខៀវស្អាត រីសតហូលីហៀល លើកំពូលភ្នំវាលរេញ Adventure Park, Zip line លើកំពូលភ្នំវាលរេញ ចំការដូងប្រេង ថតរូបលេង ការផ្តល់ជូនសេវាកម្ម៖ ផ្តល់ជូនទឹកសុទ្ធញាំក្នុងឡាន អាហារពេលថ្ងៃត្រង់ មានអ្នកដឹកនាំដំណើរកម្សាន្ត និងជួយថតរូប រៀបចំជូននូវរថយន្តធ្វើដំណើរទាំងទៅទាំងមក មានផាសុខភាព និងមានច្រៀងលេងកម្សាន្ត “ ភ ● ចេញដំណើរម៉ោង៥:៣០នាទីព្រឹក ជុំគ្នានៅមុខមន្ទីរពេទ្យ កុមារជាតិ ឈប់សម្រាកញាំអាហារពេលល្ងាច, បាញ់ឆែវនៅស្រុកភ្នំស្រួច ● ទំនាក់ទំនងកក់សំបុត្រពីឥឡូវនេះទៅ៖ 012416289/081626522', 'Peice $19.99', [' https://www.telegraph.co.uk/content/dam/Travel/hotels/2024/august/shinta-mani-wild-hotel-exterior-lead-image.jpg?imwidth=350%20350w', 'https://media.licdn.com/dms/image/C5112AQHjK6OLg_1nsQ/article-cover_image-shrink_600_2000/0/1583722548761?e=2147483647&v=beta&t=vVVLt1nF50ihk9qQEIzGDmZNTBo2GVjl6jTkjwEv7vc ',' https://secretlifeoffatbacks.com/wp-content/uploads/2019/08/ShintaManiWild2019-16.jpg'])">
+                    <img src="https://www.popular.com.kh/wp-content/uploads/2020/06/%E1%9E%91%E1%9F%81%E1%9E%9F%E1%9E%85%E1%9E%9A.jpg " style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title">​​​ ទឹកធ្លាក់ព្រៃនប់ (ខេត្តព្រះសីហនុ) </h5>
+                        <p class="card-text  text text-truncate">  </p>
+                        <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $19.99</a> </span><span id="code" style="color: red;font-weight: bold;">Code: P451</span></span>
+                    </div>
+                </div>
+            </div>
+        <!-- Card 3 -->
+            <div class="col col-md-3">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('កោះរ៉ុងសន្លឹម​', ' តោះ កក់ដមនើរទៅលេងជាមួយ ទេសចរណ៍ព្រៃភ្នំ-Flash_Tour ទឹកធ្លាក់ព្រៃនប់ ម្នាក់$19.99 (១ថ្ងៃវិលល្ងាច ០៩តុលា) កន្លែងទៅ ទស្សនាលេង៖ ទឹកធ្លាក់ព្រៃនប់៖ ថតរូបលេងទេសភាពព្រៃភ្នំ ងូតទឹកជ្រោះលេង មានថ្នាក់ៗជាជណ្តើរ មានអន្លង់លោតទឹកលេង ហែលលេង ទឹកថ្លាខៀវស្អាត រីសតហូលីហៀល លើកំពូលភ្នំវាលរេញ Adventure Park, Zip line លើកំពូលភ្នំវាលរេញ ចំការដូងប្រេង ថតរូបលេង ការផ្តល់ជូនសេវាកម្ម៖ ផ្តល់ជូនទឹកសុទ្ធញាំក្នុងឡាន អាហារពេលថ្ងៃត្រង់ មានអ្នកដឹកនាំដំណើរកម្សាន្ត និងជួយថតរូប រៀបចំជូននូវរថយន្តធ្វើដំណើរទាំងទៅទាំងមក មានផាសុខភាព និងមានច្រៀងលេងកម្សាន្ត “ ភ ● ចេញដំណើរម៉ោង៥:៣០នាទីព្រឹក ជុំគ្នានៅមុខមន្ទីរពេទ្យ កុមារជាតិ ឈប់សម្រាកញាំអាហារពេលល្ងាច, បាញ់ឆែវនៅស្រុកភ្នំស្រួច ● ទំនាក់ទំនងកក់សំបុត្រពីឥឡូវនេះទៅ៖ 012416289/081626522', 'Peice $19.99', [' https://www.telegraph.co.uk/content/dam/Travel/hotels/2024/august/shinta-mani-wild-hotel-exterior-lead-image.jpg?imwidth=350%20350w', 'https://media.licdn.com/dms/image/C5112AQHjK6OLg_1nsQ/article-cover_image-shrink_600_2000/0/1583722548761?e=2147483647&v=beta&t=vVVLt1nF50ihk9qQEIzGDmZNTBo2GVjl6jTkjwEv7vc ',' https://secretlifeoffatbacks.com/wp-content/uploads/2019/08/ShintaManiWild2019-16.jpg'])">
+                    <img src="  " style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title">​​​ កោះរ៉ុងសន្លឹម</h5>
+                        <p class="card-text  text text-truncate">  </p>
+                        <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $19.99</a> </span><span id="code" style="color: red;font-weight: bold;">Code: P451</span></span>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    <div id="container3" class="dropdown-container" style="display: none;">
+     <!-- Card 1 -->
+     <div class="col col-md-3">
+        <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('កំពូលភ្នំឱរ៉ាល់', 'កំពូលភ្នំឱរ៉ាល់ Hiking to Aural Summit on 01st-03rd Sep 2023Let`s have a nice trip which organized by Solo Landscapes!Join us on a once-in-a-lifetime hike to the highest peak in Cambodia. You`ll be rewarded with breathtaking views from the summit and a sense of accomplishment that you`ll never forget and create memories that will last a lifetime and friendships that will last even longer. **Price 125.99$/pax (2nights 3days)ចុះឈ្មោះតាមតំណរភ្ជាប់នេះ Link to register:https://forms.gle/rPeDpyfggEURPW9w9Follow us on Instagram: https://shorturl.at/bMOTY Telegram Channel: https://t.me/sololandscapekh Telegram Contact Link: https://t.me/sololandscapes', '$125', ['https://media.sabay.com/media/TECH-KK/SOVATH/Nov-2020-01/5fa10feb45618_1604390880.png', 'https://i.ytimg.com/vi/_2KMTyqex7o/maxresdefault.jpg','https://i.ytimg.com/vi/2SO-BvrCmRM/sddefault.jpg'])">
+            <img src="https://lh4.googleusercontent.com/proxy/SUxnCsbXUwQ2ixWTZrOACnPyzie9kTkdOWt_Fcm-9yPwkgBt-GRLSfUY8zCuWOmJr6EcfHSvngYWl9FcBZghQ1zcKiH9DTnjIvEFC8aBRey32VQyyCyw9V8BX5SJD0m_Mv5sqY2f4qmEoMFJWjO_" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+            <div class="card-body">
+                <h5 class="card-title">កំពូលភ្នំឱរ៉ាល់</h5>
+                <p class="card-text  text text-truncate">កំពូលភ្នំឱរ៉ាល់ Hiking to Aural Summit on 01st-03rd Sep 2023Let's have a nice trip which organized by Solo Landscapes!Join us on a once-in-a-lifetime hike to the highest peak in Cambodia. You'll be rewarded with breathtaking views from the summit and a sense of accomplishment that you'll never forget and create memories that will last a lifetime and friendships that will last even longer.**Price 125$/pax (2nights 3days)- ចុះឈ្មោះតាមតំណរភ្ជាប់នេះ Link to register:https://forms.gle/rPeDpyfggEURPW9w9Follow us on Instagram: https://shorturl.at/bMOTY Telegram Channel: https://t.me/sololandscapekh Telegram Contact Link: https://t.me/sololandscapes</p>
+                <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $125.99$/pax </span><span id="code" style="color: red;font-weight: bold;">Code: P005</span></span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="container4" class="dropdown-container" style="display: none;"></div>
+    <div id="container5" class="dropdown-container" style="display: none;"></div>
+    <div id="container6" class="dropdown-container" style="display: none;"></div>
+   </div>
+   <!-- Modal for Service Details -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Service Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselImages" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" id="carouselItems"></div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselImages" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselImages" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <h5 id="serviceTitle"></h5>
+                <p id="serviceDescription"></p>
+                <span id="servicePrice" class="text-primary"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#paymentModal" onclick="preparePayment()">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Payment -->
+<div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content w-70" >
+            <div class="modal-header">
+                <h5 class="modal-title" id="paymentModalLabel">Payment Method</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="paymentDetails" class="fw-bold"></p>
+                <div class="mb-4">
+                    <h6>Select Your Payment Method:</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="paypal" checked onclick="togglePaymentForm()">
+                        <label class="form-check-label" for="paypal">PayPal</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="creditCard" onclick="togglePaymentForm()">
+                        <label class="form-check-label" for="creditCard">Visa/MasterCard</label>
+                    </div>
+                </div>
+                
+                <div id="paypalInfo" class="payment-info">
+                    <p>Redirecting to PayPal for payment.</p>
+                </div>
+
+                <div id="creditCardInfo" class="payment-info d-none">
+                    <h6 class="mt-4">Credit Card Information</h6>
+                    <div class="mb-3">
+                        <label for="creditCardNumber" class="form-label">Credit Card Number</label>
+                        <input type="text" class="form-control" id="creditCardNumber" placeholder="1234 5678 9012 3456" required>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="expiration" class="form-label">Expiration Date</label>
+                                <input type="text" class="form-control" id="expiration" placeholder="MM/YY" required>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="cvc" class="form-label">CVC</label>
+                                <input type="text" class="form-control" id="cvc" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success mt-3" onclick="submitPayment()">Submit Payment</button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal for Invoice -->
+<div class="modal fade" id="invoiceModal" tabindex="-1" aria-labelledby="invoiceModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="invoiceModalLabel">Invoice</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 id="invoiceServiceTitle"></h6>
+                <p id="invoiceServiceDescription"></p>
+                <p id="invoiceAmount" class="fw-bold"></p>
+                <p>Thank you for your purchase! Your invoice will be sent to your email address shortly.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all dropdown items
+            const dropdownItems = document.querySelectorAll('.dropdown-menu .dropdown-item');
+            
+            // Get all containers
+            const containers = document.querySelectorAll('.dropdown-container');
+
+            // Add click event listener to each dropdown item
+            dropdownItems.forEach(item => {
+                item.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default link behavior
+
+                    // Get the data-value attribute of the clicked item
+                    const value = this.getAttribute('data-value');
+
+                    // Hide all containers
+                    containers.forEach(container => {
+                        container.style.display = 'none';
+                    });
+
+                    // Show the corresponding container
+                    const targetContainer = document.getElementById('container' + value);
+                    if (targetContainer) {
+                        targetContainer.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
+    <!-- sctipt for language dropdown -->
+    <script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+    const dropdownItems = document.querySelectorAll('.dropdown-menu .dropdown-item');
+    const containers = document.querySelectorAll('.dropdown-container');
+
+    // Search functionality
+    const searchButton = document.getElementById('searchButton');
+    const searchInput = document.getElementById('searchInput');
+
+    searchButton.addEventListener('click', function() {
+        const query = searchInput.value.toLowerCase();
+        containers.forEach(container => {
+            const cards = container.querySelectorAll('.card');
+            let hasMatch = false;
+            cards.forEach(card => {
+                const text = card.innerText.toLowerCase();
+                if (text.includes(query)) {
+                    card.style.display = 'block';
+                    hasMatch = true;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            container.style.display = hasMatch ? 'block' : 'none';
+        });
+    });
+
+    dropdownItems.forEach(item => {
+        item.addEventListener('click', function(event) {
+            event.preventDefault();
+            const value = this.getAttribute('data-value');
+            containers.forEach(container => container.style.display = 'none');
+            const targetContainer = document.getElementById('container' + value);
+            if (targetContainer) targetContainer.style.display = 'block';
+        });
+    });
+});
+    </script>
+    <script>
+        function loadCardDetails(title, description, price, images) {
+            // Set the service details
+            document.getElementById('serviceTitle').innerText = title;
+            document.getElementById('serviceDescription').innerText = description;
+            document.getElementById('servicePrice').innerText = "Price: " + price;
+    
+            // Set the carousel images
+            const carouselItems = document.getElementById('carouselItems');
+            carouselItems.innerHTML = ""; // Clear previous images
+            images.forEach((image, index) => {
+                const isActive = index === 0 ? 'active' : '';
+                carouselItems.innerHTML += `
+                    <div class="carousel-item ratio ratio-16x9 ${isActive}">
+                        <img src="${image}" class="d-block w-100 bg-cover bg-no-repeat" alt="${title}" style="height: 400px; object-fit: cover;background-size:cover;width:100%;" />
+                    </div>
+                `;
+            });
+        }
+    
+        function preparePayment() {
+            const price = document.getElementById('servicePrice').innerText;
+            document.getElementById('paymentDetails').innerText = `You have selected a service costing ${price}.`;
+            togglePaymentForm(); // Show appropriate payment form
+        }
+        function togglePaymentForm() {
+            const selectedMethod = document.querySelector('input[name="paymentMethod"]:checked').value;
+            const paypalInfo = document.getElementById('paypalInfo');
+            const creditCardInfo = document.getElementById('creditCardInfo');
+    
+            if (selectedMethod === 'paypal') {
+                paypalInfo.classList.remove('d-none');
+                creditCardInfo.classList.add('d-none');
+            } else {
+                paypalInfo.classList.add('d-none');
+                creditCardInfo.classList.remove('d-none');
+            }
+        }
+        function submitPayment() {
+            const title = document.getElementById('serviceTitle').innerText;
+            const description = document.getElementById('serviceDescription').innerText;
+            const price = document.getElementById('servicePrice').innerText;
+    
+            // Populate invoice details
+            document.getElementById('invoiceServiceTitle').innerText = title;
+            // document.getElementById('invoiceServiceDescription').innerText = description;
+            document.getElementById('invoiceAmount').innerText = price;
+    
+            // Show invoice modal
+            const invoiceModal = new bootstrap.Modal(document.getElementById('invoiceModal'));
+            invoiceModal.show();
+    
+            // Optionally, hide the payment modal
+            const paymentModal = bootstrap.Modal.getInstance(document.getElementById('paymentModal'));
+            paymentModal.hide();
+        }
+    
+        function toggleProductVisibility() {
+            const hiddenProducts = document.querySelectorAll(".d-none");
+            hiddenProducts.forEach(product => product.classList.toggle("d-none"));
+            const showMoreBtn = document.getElementById("showMoreBtn");
+            showMoreBtn.innerText = hiddenProducts[0].classList.contains("d-none") ? "Show More" : "Show Less";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Tour_Kh</title>
+    <style>
+      body{
+          background-image: url(back01.png);
+          background-color: rgb(115, 92, 50);
+          background-size: cover;
+          background-repeat: no-repeat;
+      }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark " style="background-color: rgba(138, 93, 10, 0.726);;padding: 0;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)" style="width: 150px;"><img src="logo.png" alt="logo" style="width: 100%;height: 100%;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item bg-promary">
+                <a class="nav-link btn btn-primary"style="color:white;border-radius: 5px;background-color: #0D6EFD;"  href="javascript:void(0)" id="homeLink">Home</a>
+              </li>
+              <li class="nav-item "style="border-radius: 5px;">
+                <a class="nav-link "href="Tour.html" id="Tours_Khmer">Tours_Kh</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"href="Advanture.html" id="Adventure">Adventure</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"href="About.html" id="About Us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scroll-behavior: smooth;"href="contact.html" id="Contact Us">Contact Us</a>
+              </li>
+              
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                   <!-- <img style="display: block;justify-content: center;align-items: center;height: 30px;" src="flag_kh.png" alt=""> -->
+                   Language
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                  <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
+                  <li><a class="dropdown-item" href="#" data-lang="km">ភាសាខ្មែរ(Khmer)</a></li>
+                </ul>
+              </div>
+            </div>
+            </ul>
+            <div class="ms-auto">
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search" id="searchInput">
+              <button class="btn btn-primary" type="button" id="searchButton">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav><br><br><br>
+<!-- section1 -->
+<div class="container col" style="background-color: #d4d4d41e;border:  0px solid #d4d4d4;border-radius: 1px;padding: 3px;">
+    <div class="row">
+      <div class="col-sm-6"​>
+        <div class="txt d-flex-column align-items-center justify-content-center p-2 p-lg-0" style="background-color: rgba(135, 207, 235, 0.158);border:  1px solid #d4d4d4;height: 100%;border-radius: 3px;"><center>
+            <h1 class="mt-5 fw-bold" style="color: rgb(255, 255, 255);font-family: Oswald;">Tour_Khmer</h1>
+            <h4 style="padding: 15px;;color: rgb(75, 72, 72);font-family: Oswald;">Welcome to Tour_kh, your gateway to the enchanting land of Cambodia. Whether you're a history buff, a nature lover, or a culture enthusiast, our carefully curated tours promise an unforgettable experience.</h4>
+            <button  class="btn btn-primary btn-sm fs-6 text-uppercase d-none d-md-block" type="button" ><a href="Tour.html" style="text-decoration: none;color: white;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;">Let We Go</a></button>
+          </center>
+          <button  class="btn btn-primary btn-sm fs-6 text-uppercase d-block d-md-none" type="button" ><a href="Tour.html" style="text-decoration: none;color: white;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;">Let We Go</a></button>
+        </div>
+      </div>
+      <div class="col-sm-6 ">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="box-shadow: 1px 1px 10px 3px #888888;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" style="border-radius: 3px;">
+              <div class="carousel-item active">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Angkor_Wat_Temple.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMt11hNy9yeWlq4ST2QN89NzDBWaXWLehPP4ZELBJUr_2HqcSY_oo7w0Xt9a_STRL2iAkb1PVafYfEQf087nOalJ1FkW7STNNFV_LF5723N_BF7yfSw_xQ4LyDFdiEnrajnn-XC_z5TNDYYQIOZWZ5ZT42lfa-xci98-GBtb5IktyHALGocj4pfBP4hyphenhyphen0/s2048/434583062_904642138123869_281953733428079476_n.jpg " class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src=" https://scontent-bkk1-2.xx.fbcdn.net/v/t1.6435-9/49575841_744615669228981_5742956472636014592_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_ohc=rqPshm70QG8Q7kNvgFaWScR&_nc_ht=scontent-bkk1-2.xx&oh=00_AYB_4P79CoCS11LXG4hSJuXVF1KAH1yIxLtTfxLYf-F4qw&oe=6708CE7F" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://cambodiapropertyreport.com//storage/posts/January2022/FotoJet1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.oknha.news/wp-content/uploads/2024/03/10-1.jpg " class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src=" https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/453049134_944123717726948_5908092909840065343_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=vnbaQHi0iVYQ7kNvgHUFvjT&_nc_ht=scontent-bkk1-2.xx&_nc_gid=A829SmrV5akXo3jrNrOUmAp&oh=00_AYCebt-ojRsYLx_jKb9dkLH0nGaBslmiX3zoeJNAom61rw&oe=66E723E4" class="d-block w-100" alt="...">
+              </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="container col mt-5">
+      <div class="row">
+          <div class="col-sm-12">
+              <div class="text-center text-white">
+                  <h3 class="fw-bold"style="color: red;font-size: 20px;">Our Services</h3>
+                  <h4 class="p-3" style="color: rgb(75, 72, 72);;">We offer a wide range of tour packages to suit all budgets and preferences. Whether you're looking for a weekend getaway or a longer stay, we can provide you with the perfect experience.</h4>
+              </div>
+          </div>
+      </div>
+      <!-- Team Section -->
+      <div class="row mt-4">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card mb-2">
+            <div class="card-body">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="ratio ratio-1x1 w-50 h-50 "><img  src="maker02.jpg"style="border-radius: 50%;" alt="Marketing" class="profile-pic"></div>
+            </div>
+              <div class="card-body text-center">
+                <h4>Mr.Sopheap</h4>
+                  <h6 class="card-title">Guide Supporter</h6>
+                  <p class="card-text">Creates strategies to promote the brand and its products.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card mb-2">
+              <div class="card-body">
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="ratio ratio-1x1 w-50 h-50 "><img  src="maker02.jpg"style="border-radius: 50%;" alt="Marketing" class="profile-pic"></div>
+              </div>
+
+                <div class="card-body text-center">
+                  <h4>Mr.Sek</h4>
+                  <h6 class="card-title">Back End</h6>
+                    <p class="card-text">Creates strategies to promote the brand and its products.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 ">
+              <div class="card mb-2">
+                <div class="card-body">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="ratio ratio-1x1 w-50 h-50 "><img src="001.jpg"style="border-radius: 50%;" alt="Marketing" class="profile-pic"></div>
+                  </div>
+                    <div class="card-body text-center">
+                      <h4>Mr.Thy</h4>
+                      <h6 class="card-title">Front End</h6>
+                        <p class="card-text">Creates strategies to promote the brand and its products.</p>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+<!-- Footer -->
+<footer class="container bg-dark text-white text-center mt-5 py-3" style="padding: 0;">
+    <div class="container">
+        <p class="mb-0">© 2023 Alpha01.Com.</p>
+        <ul class="list-inline mt-2">
+            <li class="list-inline-item">
+                <a href="#" class="text-white">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="text-white">Terms of Service</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="text-white">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById('searchButton').addEventListener('click', function() {
+    const searchQuery = document.getElementById('searchInput').value.toLowerCase();
+    const cards = document.querySelectorAll('.col');
+
+    cards.forEach(card => {
+        const cardTitle = card.querySelector('.card-title').innerText.toLowerCase();
+        const cardText = card.querySelector('.card-text').innerText.toLowerCase();
+
+        if (cardTitle.includes(searchQuery) || cardText.includes(searchQuery)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+});
+</script>
+</body>
+</html>

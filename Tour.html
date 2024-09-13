@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style-ContactUs.css">    
+<title>Tour_Kh</title>
+    <style>
+        body{
+            background-image: url(back01.png);
+            background-color: rgb(115, 92, 50);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark " style="background-color: rgba(138, 93, 10, 0.726);padding: 0;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="###" style="width: 150px;"><img src="logo.png" alt="logo" style="width: 100%;height: 100%;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" id="homeLink">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "style="color:white;border-radius: 5px;background-color: #0D6EFD;"  href="Tour.html" id="Tours_Khmer">Tours_Kh</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"href="Advanture.html" id="Adventure">Adventure</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"href="About.html" id="About Us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"href="contact.html" id="Contact Us">Contact Us</a>
+              </li>
+              
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                   <!-- <img style="display: block;justify-content: center;align-items: center;height: 30px;" src="flag_kh.png" alt=""> -->
+                   Language
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                  <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
+                  <li><a class="dropdown-item" href="#" data-lang="km">ភាសាខ្មែរ(Khmer)</a></li>
+                </ul>
+              </div>
+            </div>
+            </ul>
+            <div class="ms-auto">
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search" id="searchInput">
+              <button class="btn btn-primary" type="button" id="searchButton">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav><br><br><br>
+<!-- section2 -->
+<div class="container col" style="background-color: #d4d4d41e;border:  0px solid #d4d4d4;border-radius: 1px;padding: 3px;"> <!-- slide container -->
+    <div class="row">
+      <div class="col-sm-6 ">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="box-shadow: 1px 1px 10px 3px #888888;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/6/2023/10/28092620/kampot_0_feature.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/451412005_1016584056505731_22879609703928352_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zGnEEJztj-UQ7kNvgG5ki6s&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AAwcy9hKv00dbFDgsXsA3Ey&oh=00_AYDFnPo-S-tjoNtNoGZ0YOQjA6TuEtnpQ0U_MU381L_D8w&oe=66E6F4C3" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://north-vietnam.com/wp-content/uploads/2023/07/kampot-town-province-cambodia.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="txt d-flex-column align-items-center justify-content-center p-2 p-lg-0" style="background-color: rgba(135, 207, 235, 0.158);border:  1px solid #d4d4d4;height: 100%;border-radius: 3px;"><center>
+            <h1 class="mt-5 fw-bold" style="color: rgb(255, 255, 255);">Tour_Khmer</h1>
+            <h4 style="padding: 15px;text-align: left;color: rgb(75, 72, 72);font-family: Oswald;">Welcome to Tour_kh, your gateway to the enchanting land of Cambodia. Whether you're a history buff, a nature lover, or a culture enthusiast, our carefully curated tours promise an unforgettable experience.</h4>
+            <button  class="btn btn-primary btn-sm fs-6 text-uppercase d-none d-md-block" type="button" ><a href="Advanture.html" style="text-decoration: none;color: white;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;">Let We Go</a></button>
+        </center>
+        <button  class="btn btn-primary btn-sm fs-6 text-uppercase d-block d-md-none" type="button" ><a href="Advanture.html" style="text-decoration: none;color: white;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;">Let We Go</a></button>
+        </div>
+      </div>
+    </div>
+<!-- Section3 -->
+<div class="container mt-3">
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="productContainer">
+        <!-- Card 1 -->
+        <div class="col col-md-3">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('កំពូលភ្នំឱរ៉ាល់', 'កំពូលភ្នំឱរ៉ាល់ Hiking to Aural Summit on 01st-03rd Sep 2023Let`s have a nice trip which organized by Solo Landscapes!Join us on a once-in-a-lifetime hike to the highest peak in Cambodia. You`ll be rewarded with breathtaking views from the summit and a sense of accomplishment that you`ll never forget and create memories that will last a lifetime and friendships that will last even longer. **Price 125.99$/pax (2nights 3days)ចុះឈ្មោះតាមតំណរភ្ជាប់នេះ Link to register:https://forms.gle/rPeDpyfggEURPW9w9Follow us on Instagram: https://shorturl.at/bMOTY Telegram Channel: https://t.me/sololandscapekh Telegram Contact Link: https://t.me/sololandscapes', '$125', ['https://media.sabay.com/media/TECH-KK/SOVATH/Nov-2020-01/5fa10feb45618_1604390880.png', 'https://i.ytimg.com/vi/_2KMTyqex7o/maxresdefault.jpg','https://i.ytimg.com/vi/2SO-BvrCmRM/sddefault.jpg'])">
+                <img src="https://lh4.googleusercontent.com/proxy/SUxnCsbXUwQ2ixWTZrOACnPyzie9kTkdOWt_Fcm-9yPwkgBt-GRLSfUY8zCuWOmJr6EcfHSvngYWl9FcBZghQ1zcKiH9DTnjIvEFC8aBRey32VQyyCyw9V8BX5SJD0m_Mv5sqY2f4qmEoMFJWjO_" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">កំពូលភ្នំឱរ៉ាល់</h5>
+                    <p class="card-text  text text-truncate">កំពូលភ្នំឱរ៉ាល់ Hiking to Aural Summit on 01st-03rd Sep 2023Let's have a nice trip which organized by Solo Landscapes!Join us on a once-in-a-lifetime hike to the highest peak in Cambodia. You'll be rewarded with breathtaking views from the summit and a sense of accomplishment that you'll never forget and create memories that will last a lifetime and friendships that will last even longer.**Price 125$/pax (2nights 3days)- ចុះឈ្មោះតាមតំណរភ្ជាប់នេះ Link to register:https://forms.gle/rPeDpyfggEURPW9w9Follow us on Instagram: https://shorturl.at/bMOTY Telegram Channel: https://t.me/sololandscapekh Telegram Contact Link: https://t.me/sololandscapes</p>
+                    <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $125.99$/pax </span><span id="code" style="color: red;font-weight: bold;">Code: P005</span></span>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col col-md-3">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('Things to do at Virachey National Park_Ratanakiri', 'Destination 4: Things to do at Virachey National Park_Ratanakiri Let1s trip with Solo Landscapes! Virachey National Park is a biodiverse treasure trove, home to a wide variety of plants and animals. The park`s forests are home to over 700 species of birds, including the endangered Germain`s peacock pheasant. Virachey is also home to a number of indigenous ethnic groups. The Kreung, Kavet, Brao, Lao, and Lun people have all lived in the park for centuries, and their traditional cultures are an important part of the park`s heritage. July 17 Next Schedule on 12th-15th Oct and 25th-28th Nov 2023 Contact us via telegram: https://t.me /sololandscapesb Telegram Channel: https://shorturl.at/loPQ9', '$200.99', [' https://www.passionindochinatravel.com/uploads/attraction-Virachey%20National%20Park%202.jpg','https://www.flexibletourism.com/userfiles/RTF3.jpg','https://media-cdn.tripadvisor.com/media/photo-s/15/3c/4a/1f/trekking-por-el-parque.jpg'])">
+                <img src="https://www.cambotours.com/userfiles/thumbs/virachey-national-park.jpg" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">Things to do at Virachey National Park_Ratanakiri</h5>
+                    <p class="card-text  text text-truncate">Destination 4: Things to do at Virachey National Park_Ratanakiri Let1s trip with Solo Landscapes! Virachey National Park is a biodiverse treasure trove, home to a wide variety of plants and animals. The park`s forests are home to over 700 species of birds, including the endangered Germain`s peacock pheasant. Virachey is also home to a number of indigenous ethnic groups. The Kreung, Kavet, Brao, Lao, and Lun people have all lived in the park for centuries, and their traditional cultures are an important part of the park`s heritage. July 17 Next Schedule on 12th-15th Oct and 25th-28th Nov 2023 Contact us via telegram: https://t.me /sololandscapesb Telegram Channel: https://shorturl.at/loPQ9</p>
+                    <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $200.99$/pax </span><span id="code" style="color: red;font-weight: bold;">Code: P008</span></span>
+                </div>
+            </div>
+        </div>
+         <!-- Card 3 -->
+         <div class="col col-md-3">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('ផ្សងព្រេងដើរបីខ្នង បីទឹកជ្រោះ ', 'វដូវកាលទី២៖ថ្មើរជើងចម្ងាយ លើសពី៦០គីឡូម៉ែត្រ នៅថ្ងៃទី ១៧ ដល់ ២០ សីហា ២០២៣  Seasonll: 60km Thru-Hiking to 3 Khnang and waterfalls on 17th-20th Aug 2023  ផ្សងព្រេងដើរបីខ្នង បីទឹកជ្រោះ ពីដែនជម្រកសត្វព្រៃភ្នំឱរ៉ាល់ទៅកាន់ ឧទ្យានជាតិភ្នំក្រវាញដែលមានចម្ងាយប្រមាណ ៦០ គីឡូម៉ែត្រ។ វាជា ដំណើរផ្សងព្រេងកម្រិតអ្នកមានបទពិសោធន៍ អ្នកនឹងបានទស្សនា ទេសភាពស្អាតៗ ព្រៃភ្នំ វាលស្រល់ ជួបឧបសគ្គចំណោតៗ និងភ្លក់ គ្រប់រសជាតិ នាពេលដើមរដូវវស្សានេះ។  3Khnangs with viewpoint, 3 Waterfalls from the Aural Mountain Wildlife Sanctuary to the Cardamom Mountain National Park, about 60km thru-hiking. It was adventures experiences to enjoy viewpoints, mountain views, pine tree field, steep obstacles and taste all the flavors at the beginning of this rainy season.   តម្លៃ៖ $175.99 ក្នុងម្នាក់ (រយះពេល៣យប់៤ថ្ងៃ)    Package: $175 per person (Excluded entrance fee)   ៖៖៖៖Link to register ចុះឈ្មោះតាមតំណរភ្ជាប់នេះ៖ https://forms.gle/A9NzMm7zar9FoNeu5 ព័ត៍មានលំអិតនៅក្នុងតំណរភ្ជាប់ខាងលើ​    All detailed info mentioned below; Booking via:https://t.me/sololandscapesFollow us on Instagram: https://shorturl.at/bMOTY →Telegram Channel: https://shorturl.at/loPQ9 ', '$175,99', [' https://i.ytimg.com/vi/6XbC8kUkFbE/sddefault.jpg', 'https://i.ytimg.com/vi/ss-92SQI5bU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBkDHsTnrCQ1W1YJyazYDJWRvYYnA ',' https://i.ytimg.com/vi/4ni7EYK6PnI/mqdefault.jpg'])">
+                <img src=" https://i.ytimg.com/vi/M5eHbxprSzI/maxresdefault.jpg" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">ផ្សងព្រេងដើរបីខ្នង បីទឹកជ្រោះ</h5>
+                    <p class="card-text  text text-truncate">វដូវកាលទី២៖ថ្មើរជើងចម្ងាយ លើសពី៦០គីឡូម៉ែត្រ នៅថ្ងៃទី ១៧ ដល់ ២០ សីហា ២០២៣  Seasonll: 60km Thru-Hiking to 3 Khnang and waterfalls on 17th-20th Aug 2023  ផ្សងព្រេងដើរបីខ្នង បីទឹកជ្រោះ ពីដែនជម្រកសត្វព្រៃភ្នំឱរ៉ាល់ទៅកាន់ ឧទ្យានជាតិភ្នំក្រវាញដែលមានចម្ងាយប្រមាណ ៦០ គីឡូម៉ែត្រ។ វាជា ដំណើរផ្សងព្រេងកម្រិតអ្នកមានបទពិសោធន៍ អ្នកនឹងបានទស្សនា ទេសភាពស្អាតៗ ព្រៃភ្នំ វាលស្រល់ ជួបឧបសគ្គចំណោតៗ និងភ្លក់ គ្រប់រសជាតិ នាពេលដើមរដូវវស្សានេះ។  3Khnangs with viewpoint, 3 Waterfalls from the Aural Mountain Wildlife Sanctuary to the Cardamom Mountain National Park, about 60km thru-hiking. It was adventures experiences to enjoy viewpoints, mountain views, pine tree field, steep obstacles and taste all the flavors at the beginning of this rainy season.   តម្លៃ៖ $175 ក្នុងម្នាក់ (រយះពេល៣យប់៤ថ្ងៃ)    Package: $175 per person (Excluded entrance fee)   ៖៖៖៖Link to register ចុះឈ្មោះតាមតំណរភ្ជាប់នេះ៖ https://forms.gle/A9NzMm7zar9FoNeu5 ព័ត៍មានលំអិតនៅក្នុងតំណរភ្ជាប់ខាងលើ​    All detailed info mentioned below; Booking via:https://t.me/sololandscapesFollow us on Instagram: https://shorturl.at/bMOTY →Telegram Channel: https://shorturl.at/loPQ9 </p>
+                    <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $175,99</span><span id="code" style="color: red;font-weight: bold;">Code: P0125</span></span>
+                </div>
+            </div>
+        </div>
+         <!-- Card 4 -->
+         <div class="col col-md-3">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails(' បោះតង់សហគមន៏ជូផាត(ខេត្តកោះកុង)', 'បោះតង់នៅផ្ទះស្នាក់ឯកជន នៅថ្ងៃទី៣០ ដល់ ៣១ ខែកក្កដា ឆ្នាំ២០២២ Camping at Private Stay on 30th-31st July 2022Chi Phat is mainland South East Asia`s largest remaining tract of rainforest situated directly in the heart of the Cardamom Mountains. There is a lot of fascinating nature at Chi Phat, including mountains, waterfalls, rivers, evergreen forests, low land swamps and Malaluka swamps. Thanks to the good network of forest trails at Chi Phat tourists get the chance to watch quite a huge diversity of wildlife and birds. In addition to that, tourists can also visit a beautiful village full of warm, open people and see cultural artifacts such as burial jars and wooden coffins. Activities which can be done at Chi Phat go from single and multi day mountain biking and trekking and traditional boat trips, to forest camping, wildlife and bird watching and village explorations.(Credit to Wildlife Alliance) Date: 30th-31st Jul 2022Duration: 1night 2 days (Weekend)Price: $89,99 (chilling out and motorbike trip)  Day1៖ - Departure at 4:30am in front of National Pediatric Hospital-Breakfast and Coffee Break along the ways -Reached at Chipat community -Check in your homestay (about 3km from community)-Install the tents -Lunch Time there-Prepare stuffs to Ou Tek Vet Waterfall and Chhay Khpos -Swimming and relax-Back to campsite-Dinner gathering-Sharing session by leader there Day2:  -Get up at 6:30am -Trek to Shaved Mountain to see sunrise there.  -Enjoying breakfast and coffee there  -Take rafting near homestay -Having lunch there  -Return to Phnom PenhInclude៖  Transportation, Tent​ for 2 people, Entrance Fee, Motorbike, sleeping pad, 4 meals, coffee, communities fee, snack, refilling water, water 20L to refill and motorbike(Drive own) .Exclude៖ Insurance, soft drink, personal expense, breakfast at day 1 and dinner at day Personal Stuffs should bring with: Reusable lunch box, short spoon, reusable bottle(1.5L up), coffee cup, hiking shoes, flip flop, raincoat, hiking backpack, headlight, masks, and washing sanitizing, sleeping bag, 4 sets of  clothes(Swimming) , Scarf​ and personal needs. Contact us via 0312222168, 012778 679 , Thanks for your booking.  ', '$89,99', ['https://1.bp.blogspot.com/--ydufwzp7ro/YTnTlgZUgDI/AAAAAAAAED8/FRaGytb2NsUqFs-6tS-JmXQJrbFcAQ7IQCLcBGAsYHQ/s0/240489854_950152092210138_1082913914464546707_n.jpg ', ' https://cambodiapropertyreport.com//storage/posts/January2023/cover1.jpg',' https://1.bp.blogspot.com/-KVqCmrDKMHo/YTnTksqAc2I/AAAAAAAAEDw/JTNSwA9G8QY3n9ICZxnYVAV75n4UQ25xgCLcBGAsYHQ/s0/240398528_950151995543481_6422367014700961833_n.jpg'])">
+                <img src="https://i.ytimg.com/vi/SdWSczn5uac/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAQMvALIZasnW_KlTBWfB5TmC7FRA " style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">បោះតង់សហគមន៏ជូផាត(ខេត្តកោះកុង)</h5>
+                    <p class="card-text  text text-truncate">បោះតង់នៅផ្ទះស្នាក់ឯកជន នៅថ្ងៃទី៣០ ដល់ ៣១ ខែកក្កដា ឆ្នាំ២០២២ Camping at Private Stay on 30th-31st July 2022Chi Phat is mainland South East Asia's largest remaining tract of rainforest situated directly in the heart of the Cardamom Mountains. There is a lot of fascinating nature at Chi Phat, including mountains, waterfalls, rivers, evergreen forests, low land swamps and Malaluka swamps. Thanks to the good network of forest trails at Chi Phat tourists get the chance to watch quite a huge diversity of wildlife and birds. In addition to that, tourists can also visit a beautiful village full of warm, open people and see cultural artifacts such as burial jars and wooden coffins. Activities which can be done at Chi Phat go from single and multi day mountain biking and trekking and traditional boat trips, to forest camping, wildlife and bird watching and village explorations.(Credit to Wildlife Alliance) Date: 30th-31st Jul 2022Duration: 1night 2 days (Weekend)Price: $89 (chilling out and motorbike trip)  Day1៖ - Departure at 4:30am in front of National Pediatric Hospital-Breakfast and Coffee Break along the ways -Reached at Chipat community -Check in your homestay (about 3km from community)-Install the tents -Lunch Time there-Prepare stuffs to Ou Tek Vet Waterfall and Chhay Khpos -Swimming and relax-Back to campsite-Dinner gathering-Sharing session by leader there Day2:  -Get up at 6:30am -Trek to Shaved Mountain to see sunrise there.  -Enjoying breakfast and coffee there  -Take rafting near homestay -Having lunch there  -Return to Phnom PenhInclude៖  Transportation, Tent​ for 2 people, Entrance Fee, Motorbike, sleeping pad, 4 meals, coffee, communities fee, snack, refilling water, water 20L to refill and motorbike(Drive own) .Exclude៖ Insurance, soft drink, personal expense, breakfast at day 1 and dinner at day Personal Stuffs should bring with: Reusable lunch box, short spoon, reusable bottle(1.5L up), coffee cup, hiking shoes, flip flop, raincoat, hiking backpack, headlight, masks, and washing sanitizing, sleeping bag, 4 sets of  clothes(Swimming) , Scarf​ and personal needs. Contact us via 0312222168, 012778 679 , Thanks for your booking. 
+                         </p>
+                    <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $89.99</span><span id="code" style="color: red;font-weight: bold;">Code: P01105</span></span>
+                </div>
+            </div>
+        </div>
+         <!-- Card 5 -->
+         <div class="col col-md-3">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('ខ្នងក្រពើ Khnang Kroper ', 'ខ្នងក្រពើ Khnang Kroper Camping on 07th-08th Oct 2023 Let`s trip with Solo Landscapes! The rainforest is a mysterious and magical place, especially during the rainy season. It is a good time of adventure and excitement with the sound of the rain and the smell of the wet earth can be very sensual. You can cuddle up by the fire or take a walk in the rain together. ចុះឈ្មោះតាមតំណរភ្ជាប់នេះ Link to register: https://forms.gle/wPfEPjXbe9HtiWPq9 Telegram Channel: https://t.me/sololandscapekh Telegram Contact Link: https://t.me /sololandscapes / Tel: +855 16 778 679 / Email: sololandscapekh@gmail.com ', '$80.99', [' https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/450653026_810881687856573_6202906245973601343_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MjkC2uy9mvwQ7kNvgGpymIm&_nc_ht=scontent-bkk1-1.xx&oh=00_AYD50uRhNmVTMlXDbAkPtqWYZnfnwv1IgvzJteqWwMe0bQ&oe=66E8810F', ' https://cambodiapropertyreport.com//storage/posts/June2021/cover2.jpg','https://s5.kh1.co/__image/w=650,h=488,q=100/f9/f965f2efdbc055bdbe3100db06867d3e06a2460a.jpg '])">
+                <img src="https://s5.kh1.co/__image/w=1200,h=630,q=100/ad/adb20238a18edb23d89c84156dff984f13830a6e.jpg " style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">ខ្នងក្រពើ Khnang Kroper</h5>
+                    <p class="card-text  text text-truncate">
+                        ខ្នងក្រពើ Khnang Kroper Camping on 07th-08th Oct 2023 Let's trip with Solo Landscapes! The rainforest is a mysterious and magical place, especially during the rainy season. It is a good time of adventure and excitement with the sound of the rain and the smell of the wet earth can be very sensual. You can cuddle up by the fire or take a walk in the rain together. ចុះឈ្មោះតាមតំណរភ្ជាប់នេះ Link to register: https://forms.gle/wPfEPjXbe9HtiWPq9 Telegram Channel: https://t.me/sololandscapekh Telegram Contact Link: https://t.me /sololandscapes / Tel: +855 16 778 679 / Email: sololandscapekh@gmail.com </p>
+                    <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $80.99</span><span id="code" style="color: red;font-weight: bold;">Code: P0125</span></span>
+                </div>
+            </div>
+        </div>
+         <!-- Card 6 -->
+         <div class="col col-md-3">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('ស្ទឹងដំណាក់ក្បួន (ខេត្តកោះកុង) ', ' ទឹងដំណាក់ក្បួន (ខេត្តកោះកុង)* ទេសភាពស្ទឹងដំណាក់ក្បួន នារដូវវស្សា ដែលស្ថិតក្នុង ឧទ្យានជាតិជួរភ្នំក្រវាញខាងត្បូង នៃខេត្តកោះកុង មានចម្ងាយ ៤០គីឡូម៉ែត្រ ពីទីរួមខេត្តកោះកុង តាមផ្លូវទៅ អូរសោម៕ • ទីតាំងក្នុងGoogle Map: https://maps.google.com?q=11.7647077,103.0579380&hl=en-KH&gl=kh&entry=gps – កាហ្វេឆ្ងាញ់ Good Day Cambodia​ កម្ពុជាមាតុភូមិខ្ញុំ', '', [' https://i0.wp.com/champeynews.com/wp-content/uploads/2022/08/54.jpg?resize=696%2C392&ssl=1', ' https://asset.cambodia.gov.kh/provincial/sites/12/2020/12/97508268-A2D0-4202-BBA7-C91185433B66-1024x768.jpeg',' https://i.ytimg.com/vi/EDlFp2_eX4I/maxresdefault.jpg'])">
+                <img src="https://champeynews.com/wp-content/uploads/2022/08/47.jpg" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">ស្ទឹងដំណាក់ក្បួន (ខេត្តកោះកុង)</h5>
+                    <p class="card-text  text text-truncate">ស្ទឹងដំណាក់ក្បួន (ខេត្តកោះកុង)* ទេសភាពស្ទឹងដំណាក់ក្បួន នារដូវវស្សា ដែលស្ថិតក្នុង ឧទ្យានជាតិជួរភ្នំក្រវាញខាងត្បូង នៃខេត្តកោះកុង មានចម្ងាយ ៤០គីឡូម៉ែត្រ ពីទីរួមខេត្តកោះកុង តាមផ្លូវទៅ អូរសោម៕ • ទីតាំងក្នុងGoogle Map: https://maps.google.com?q=11.7647077,103.0579380&hl=en-KH&gl=kh&entry=gps – កាហ្វេឆ្ងាញ់ Good Day Cambodia​ កម្ពុជាមាតុភូមិខ្ញុំ</p>
+                    <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From ...</span><span id="code" style="color: red;font-weight: bold;">Code: P101</span></span>
+                </div>
+            </div>
+        </div>
+         <!-- Card 7 -->
+         <div class="col col-md-3">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('ទឹកដីជីផាត ស្រុកថ្មបាំង', 'ទឹកដីជីផាត ស្រុកថ្មបាំង (ខេត្តកោះកុង) ស្អាតណាស់!  ចម្ងាយប្រហែល ១៥៤គីឡូ ពីរាជធានីភ្នំពេញ ទឹកដីដ៏ល្អឯកមួយនេះ សម្បូរទៅដោយធម្មជាតិជីវចម្រុះ  ទឹកជ្រោះឬទឹកធ្លាក់ • ឧទ្យានជាតិ K អេកូទេសចរណ៍ តំបន់អេកូទេសចរណ៍ ជីផាត មានទីតាំងស្ថិតនៅ ភូមិជីផាត ឃុំ ជីផាត ស្រុកថ្មបាំង ខេត្តកោះកុង និងមានចម្ងាយប្រហែល ១២៥គីឡូ មែត្រ ពីរង្វង់មូល ខេត្តកោះកុង និងចម្ងាយប្រមាណ ១៥៤គីឡូមែត្រ ពីរាជធានីភ្នំពេញ។  តំបន់អេកូទេសចរណ៍ ជីផាត ស្ថិតនៅក្នុងប្រភេទ៖ ទឹកជ្រោះឬទឹកធ្លាក់ ឧទ្យានជាតិ អេកូទេសចរណ៍។  ចំណុចសំខាន់ៗនៅ តំបន់អេកូទេសចរណ៍ ជីផាត មានដូចជា៖ ,ជិះទូក  បោះជំរុំឬបោះតង់  -ទស្សនាព្រៃកោងកាង ហែលទឹក គយគន់ថ្ងៃលិច មើលសត្វ -រៀបចំអាហារដោយខ្លួនឯង និងចំណុចផ្សេងៗទៀត។ ថែរក្សា ការពារ -ផ្សព្វផ្សាយ ', '', ['https://asset.ams.com.kh/central/media/2020/12/photo_2020-12-31_11-39-21-1.jpg ', ' https://i.ytimg.com/vi/vioV_3CfNzE/maxresdefault.jpg',' https://images.khmer24.co/21-03-25/3269--1616656290-10687307-d.jpg'])">
+                <img src=" https://phkaslapartner.com/wp-content/uploads/2023/09/image-7-edited-2.jpg" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">ទឹកដីជីផាត ស្រុកថ្មបាំង</h5>
+                    <p class="card-text  text text-truncate">ទឹកដីជីផាត ស្រុកថ្មបាំង (ខេត្តកោះកុង) ស្អាតណាស់!  ចម្ងាយប្រហែល ១៥៤គីឡូ ពីរាជធានីភ្នំពេញ ទឹកដីដ៏ល្អឯកមួយនេះ សម្បូរទៅដោយធម្មជាតិជីវចម្រុះ  ទឹកជ្រោះឬទឹកធ្លាក់ • ឧទ្យានជាតិ K អេកូទេសចរណ៍ តំបន់អេកូទេសចរណ៍ ជីផាត មានទីតាំងស្ថិតនៅ ភូមិជីផាត ឃុំ ជីផាត ស្រុកថ្មបាំង ខេត្តកោះកុង និងមានចម្ងាយប្រហែល ១២៥គីឡូ មែត្រ ពីរង្វង់មូល ខេត្តកោះកុង និងចម្ងាយប្រមាណ ១៥៤គីឡូមែត្រ ពីរាជធានីភ្នំពេញ។  តំបន់អេកូទេសចរណ៍ ជីផាត ស្ថិតនៅក្នុងប្រភេទ៖ ទឹកជ្រោះឬទឹកធ្លាក់ ឧទ្យានជាតិ អេកូទេសចរណ៍។  ចំណុចសំខាន់ៗនៅ តំបន់អេកូទេសចរណ៍ ជីផាត មានដូចជា៖ ,ជិះទូក  បោះជំរុំឬបោះតង់  -ទស្សនាព្រៃកោងកាង ហែលទឹក គយគន់ថ្ងៃលិច មើលសត្វ -រៀបចំអាហារដោយខ្លួនឯង និងចំណុចផ្សេងៗទៀត។ ថែរក្សា ការពារ -ផ្សព្វផ្សាយ </p>
+                    <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From ...</span><span id="code" style="color: red;font-weight: bold;">Code: P213</span></span>
+                </div>
+            </div>
+        </div>
+         <!-- Card 8 -->
+         <div class="col col-md-3">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails(' ទឹកធ្លាក់អន្លង់ជើងចាប', ' ទឹកធ្លាក់អន្លង់ជើងចាប នៅភ្នំគូលែន (សៀមរាប)ទឹកធ្លាក់អន្លង់ជើងចាបអ្នកចូលចិត្តបោះតង់នៅសៀមរាបភាគច្រើនប្រហែលជាស្គាល់ហើយកន្លែងនេះ ', '', [' https://i.ytimg.com/vi/fiuz9igijYU/maxresdefault.jpg', ' https://oss2.tnaot.com/tnaot/image/2020/12/14/9bc65966969b45c5b26fede1664c503c.jpg',' https://www.khmerplaces.com/storage/posts/June2019/VytaFlDy2E32XixhpCZe.jpg'])">
+                <img src="https://i.ytimg.com/vi/fiuz9igijYU/maxresdefault.jpg " style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">ទឹកធ្លាក់អន្លង់ជើងចាប</h5>
+                    <p class="card-text  text text-truncate">ទឹកធ្លាក់អន្លង់ជើងចាប នៅភ្នំគូលែន (សៀមរាប)ទឹកធ្លាក់អន្លង់ជើងចាបអ្នកចូលចិត្តបោះតង់នៅសៀមរាបភាគច្រើនប្រហែលជាស្គាល់ហើយកន្លែងនេះ </p>
+                    <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From ...</span><span id="code" style="color: red;font-weight: bold;">Code: P320</span></span>
+                </div>
+            </div>
+        </div>
+         <!-- Card 9 -->
+         <div class="col col-md-3">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('បោះតង់នៅសហគមន៍តាំងយូរ ', 'បោះតង់នៅសហគមន៍តាំងយូរ ការពារធម្មជាតិតាំងយូរ នៅថ្ងៃទី02 ដល់ 03 ខែ កក្កដា ឆ្នាំ2022  Camping at Taing You CBET on 02nd-03rd July 2024 គ្រប់ដណ្តប់លើផ្ទៃដីធម្មជាតិប្រមាណជាង២ម៉ឺន៥ពាន់ ហិកតា តំបន់ភ្នំត្បែង មានសម្រស់ធម្មជាតិស្អាតដាច់ គេ មានទឹកធ្លាក់បីតង់តាម៉ា ទឹកធ្លាក់តាំងយូរ ឬចាក់ អង្រែ រូងប្រជៀវភ្នំត្បែង និងទីតាំងសក្ការៈថ្មីបីដុំ។ ប៉ុន្តែ មុននឹងឡើងដល់ទីតាំងដ៏ស្រស់ស្អាតទាំងនេះ ដំណើរត្រូវឆ្លងកាត់ផ្លូវជម្រួលភ្នំ ដែលអមសងខាង ដោយចំការចេកដាក់កន្ទុយភ្នែក ហើយអ្វីដែលសំខាន់ អ្នកធ្វើ នោះគឺការឡើងភ្នំដែលមានកម្ពស់ជាង៤០០ម៉ែត្រដែល  មានកាំជណ្តើរ១ពាន់៨រយកាំ។  Cost: $99.99 Level: Medium(for challenge yourself) ថ្ងៃទី១ (Day1)៖  ចេញដំណើរម៉ោង៤:៣០ព្រឹក នៅមុខCaltex •Calemette  កំពង់ធំ អាហារពេលព្រឹកនៅតាមផ្លូវ ម៉ោង8ព្រឹកនៅខេត្តទៅដល់ភូមិម៉ោង១១ព្រឹក នៅជិតជើងភ្នំ ចូលទៅកាន់សហគមន៍ការពារធម្មជាតិតាំងយូរ ចាប់ផ្តើមឡើងភ្នំ ជាមួយអាហារថ្ងៃត្រង់តាមផ្លូវ(ទៅដល់ម៉ោង៣រសៀល)តំឡើងតង់ និងរៀបចំអីវ៉ាន់ ងូតទឹក ជ្រោះ ចាក់អង្រែតូចទៅមើលថ្ងៃលិចនៅពយជ្រលងស្នេហ៍ អាហារពេលល្ងាច ជុំគ្នា ជជែកគ្នាលេងនៅពេលយប់  ថ្ងៃទី២ (Day2)៖) ងើបម៉ោង៦ព្រឹក អាហារពេលព្រឹកនៅជាប់មាត់អូរ ជិះក្បូនលេង តាមមាត់ជ្រោះ ខ្ចប់បាយថ្ងៃត្រង់ (បាយ សាច់គោ ងៀត សាច់ ជិះគោយន្តបន្តទៅផ្លូវចុះ ហូបបាយថ្ងៃត្រង់នៅសហគមន៍ ចុះពីជណ្តើរភ្នំតាំងយូរ ត្រលប់មកភ្នំពេញវិញ (Travel back to  Phnom Penh) ផ្តល់ជូន (Include)៖ ការធ្វើដំណើរ តង់ កំរាលពូក អាហារ៧ពេល កាហ្វេ សហគមន៍ អាហារសម្រន់ ទឹក សម្រាប់ច្រក ទឹកចម្លោះ និងគោយន្ត Transportation, Insurance, Tent, sleeping pad, 8 meals, coffee, communities fee, snack, refilling water, water filter and hand tractor. មិនផ្តល់ជូន(Exclude)៖ ភេសជ្ជៈ និងការចំណាយ ផ្ទាល់ខ្លួន soft drink, personal expense breakfast at day 1 and dinner at day2  សម្ភារៈចំបាច់ផ្ទាល់ខ្លួន ៖ ប្រអប់បាយ ស្លាបព្រា កែវកាហ្វេ ដបទឹកប្រើបានយូរ អាវភ្លៀង អាវរងា ភួយ(Sleeping bag) ស្បែកជើង ឡើងភ្នំ មួក កាតាបឡើងភ្នំ ពិលពាក់ក្បាល ម៉ាស់ អាកុល និងសម្លៀកបំពាក់ ៣កំផ្លេ ក្រមា ថ្នាំបាញ់មូស និងសម្ភារៈដែលអ្នកគិតថាចាំបាច់ផ្ទាល់ខ្លួនឯង  Personal Stuffs: Reusable lunch box, short spoon, reusable bottle(1.5L up), coffee cup, hiking shoes, flip flop, raincoat, hiking backpack, headlight, masks, and washing sanitizing, sleeping bag, 3 set of hiking clothes, Scarf and personal needs.   ព័ត៍មានបន្ថែមសូមទំនាក់ទំនងៈ 031 2222 168,  012 778 679  Contact us via 0312222168, 012778 679  ', '$99.99', [' https://i.ytimg.com/vi/DD7t-srVjZU/hqdefault.jpg?v=65a130ee', ' https://i.ytimg.com/vi/AeYVN7vDP00/mqdefault.jpg',' https://asset.ams.com.kh/central/media/2023/07/photo_2023-07-26_12-01-57-1024x575.jpg'])">
+                <img src="https://i.ytimg.com/vi/DD7t-srVjZU/hqdefault.jpg?v=65a130ee " style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">បោះតង់នៅសហគមន៍តាំងយូរ</h5>
+                    <p class="card-text  text text-truncate">បោះតង់នៅសហគមន៍តាំងយូរ ការពារធម្មជាតិតាំងយូរ នៅថ្ងៃទី02 ដល់ 03 ខែ កក្កដា ឆ្នាំ2022  Camping at Taing You CBET on 02nd-03rd July 2024 គ្រប់ដណ្តប់លើផ្ទៃដីធម្មជាតិប្រមាណជាង២ម៉ឺន៥ពាន់ ហិកតា តំបន់ភ្នំត្បែង មានសម្រស់ធម្មជាតិស្អាតដាច់ គេ មានទឹកធ្លាក់បីតង់តាម៉ា ទឹកធ្លាក់តាំងយូរ ឬចាក់ អង្រែ រូងប្រជៀវភ្នំត្បែង និងទីតាំងសក្ការៈថ្មីបីដុំ។ ប៉ុន្តែ មុននឹងឡើងដល់ទីតាំងដ៏ស្រស់ស្អាតទាំងនេះ ដំណើរត្រូវឆ្លងកាត់ផ្លូវជម្រួលភ្នំ ដែលអមសងខាង ដោយចំការចេកដាក់កន្ទុយភ្នែក ហើយអ្វីដែលសំខាន់ អ្នកធ្វើ នោះគឺការឡើងភ្នំដែលមានកម្ពស់ជាង៤០០ម៉ែត្រដែល  មានកាំជណ្តើរ១ពាន់៨រយកាំ។  Cost: $99.99 Level: Medium(for challenge yourself) ថ្ងៃទី១ (Day1)៖  ចេញដំណើរម៉ោង៤:៣០ព្រឹក នៅមុខCaltex •Calemette  កំពង់ធំ អាហារពេលព្រឹកនៅតាមផ្លូវ ម៉ោង8ព្រឹកនៅខេត្តទៅដល់ភូមិម៉ោង១១ព្រឹក នៅជិតជើងភ្នំ ចូលទៅកាន់សហគមន៍ការពារធម្មជាតិតាំងយូរ ចាប់ផ្តើមឡើងភ្នំ ជាមួយអាហារថ្ងៃត្រង់តាមផ្លូវ(ទៅដល់ម៉ោង៣រសៀល)តំឡើងតង់ និងរៀបចំអីវ៉ាន់ ងូតទឹក ជ្រោះ ចាក់អង្រែតូចទៅមើលថ្ងៃលិចនៅពយជ្រលងស្នេហ៍ អាហារពេលល្ងាច ជុំគ្នា ជជែកគ្នាលេងនៅពេលយប់  ថ្ងៃទី២ (Day2)៖) ងើបម៉ោង៦ព្រឹក អាហារពេលព្រឹកនៅជាប់មាត់អូរ ជិះក្បូនលេង តាមមាត់ជ្រោះ ខ្ចប់បាយថ្ងៃត្រង់ (បាយ សាច់គោ ងៀត សាច់ ជិះគោយន្តបន្តទៅផ្លូវចុះ ហូបបាយថ្ងៃត្រង់នៅសហគមន៍ ចុះពីជណ្តើរភ្នំតាំងយូរ ត្រលប់មកភ្នំពេញវិញ (Travel back to  Phnom Penh) ផ្តល់ជូន (Include)៖ ការធ្វើដំណើរ តង់ កំរាលពូក អាហារ៧ពេល កាហ្វេ សហគមន៍ អាហារសម្រន់ ទឹក សម្រាប់ច្រក ទឹកចម្លោះ និងគោយន្ត Transportation, Insurance, Tent, sleeping pad, 8 meals, coffee, communities fee, snack, refilling water, water filter and hand tractor. មិនផ្តល់ជូន(Exclude)៖ ភេសជ្ជៈ និងការចំណាយ ផ្ទាល់ខ្លួន soft drink, personal expense breakfast at day 1 and dinner at day2  សម្ភារៈចំបាច់ផ្ទាល់ខ្លួន ៖ ប្រអប់បាយ ស្លាបព្រា កែវកាហ្វេ ដបទឹកប្រើបានយូរ អាវភ្លៀង អាវរងា ភួយ(Sleeping bag) ស្បែកជើង ឡើងភ្នំ មួក កាតាបឡើងភ្នំ ពិលពាក់ក្បាល ម៉ាស់ អាកុល និងសម្លៀកបំពាក់ ៣កំផ្លេ ក្រមា ថ្នាំបាញ់មូស និងសម្ភារៈដែលអ្នកគិតថាចាំបាច់ផ្ទាល់ខ្លួនឯង  Personal Stuffs: Reusable lunch box, short spoon, reusable bottle(1.5L up), coffee cup, hiking shoes, flip flop, raincoat, hiking backpack, headlight, masks, and washing sanitizing, sleeping bag, 3 set of hiking clothes, Scarf and personal needs.   ព័ត៍មានបន្ថែមសូមទំនាក់ទំនងៈ 031 2222 168,  012 778 679  Contact us via 0312222168, 012778 679 </p>
+                    <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $99.99</span><span id="code" style="color: red;font-weight: bold;">Code: P032</span></span>
+                </div>
+            </div>
+        </div>
+         <!-- Card 10 -->
+         <div class="col col-md-3">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('ឧទ្យានជាតិព្រះមុនីវង្សភ្នំបូកគោ ', ' ឧទ្យានជាតិព្រះមុនីវង្សភ្នំបូកគោ (កំពត)តោះ! មកស្គាល់កាន់តែលំអិត និងដឹងកន្លែងទៅលេងនៅ ភ្នំបូកគោ!ឧទ្យានជាតិព្រះមុនីវង្សភ្នំបូកគោ ដែលត្រូវបានគេស្គាល់ភាគច្រើនថា ឧទ្យានជាតិបូកគោ ស្ថិតនៅក្នុងស្រុកទឹកឈូ ខេត្តកំពត។ ភ្នំបូកគោ មានកម្ពស់ប្រមាណ 1075ម៉ែត្រធៀបទៅនឹងនីវ៉ូទឹកសមុទ្រ និង មានចម្ងាយប្រមាណ 11 គីឡូម៉ែត្រពីក្រុងកំពត ទៅកាន់ជើងភ្នំ និង ចម្ងាយ32គីឡូម៉ែត្រពីជើងភ្នំដល់កំពូលភ្នំ។ ភ្នំបូកគោត្រូវបានរកឃើញ នៅឆ្នាំ1917 ដោយជនជាតិបារាំងឈ្មោះរូលួស និងត្រូវបានអភិវឌ្ឍ ឲ្យទៅជារមណីយដ្ឋានក្នុងឆ្នាំ1921។ កាលពីមុន ភ្នំបូកគោ ធ្លាប់ជាទី កន្លែងសម្រាកដ៏ល្បីល្បាញដែលធ្វើឡើងសម្រាប់តែអភិជនបារាំង និងរាជវង្សានុវង្សប៉ុណ្ណោះ។ភ្នំបូកគោ ល្បីឈ្មោះដោយសារតែអាកាសធាតុត្រជាក់ពេញមួយឆ្នាំ ព្រមទាំងមានព្រៃព្រឹក្សាធម្មជាតិដ៏ខៀវស្រងាត់និងស្រស់បំព្រង។ ភ្ញៀវទេសចរអាចគយគន់ទិដ្ឋភាពមើលពីលើកំពូលភ្នំទៅកាន់ទីរួមខេត្តកំពត ឆ្នេរសមុទ្រនិងកោះជាច្រើនដែលនៅខាងក្រោមយ៉ាងសប្បាយរីករាយ។ ឧទ្យានជាតិភ្នំបូកគោ មានដើមឈើត្រូពិច ពាសពេញលើភ្នំ ព្រមទាំងសត្វព្រៃជាច្រើនប្រភេទ និងទឹកជ្រោះដ៏ ស្រស់ស្អាតនិងល្បីល្បាញគឺទឹកជ្រោះពពកវិល។ កន្លែងសំខាន់ៗជាច្រើនដែលយើងអាចទៅលេងបាននៅលើភ្នំបូកគោ មានដូចជា ដំណាក់ស្លាខ្មៅ ឡឺ បូកគោ ផាលេស (សណ្ឋាគារចាស់) វត្ត សំពៅប្រាំ បដិមាលោកយាយម៉ៅ ព្រះវិហារកាតូលិកចាស់ ព្រៃធម្មជាតិ ដំណាក់ព្រះបាទមុនីវង្ស ឬដំណាក់ស្តេច រមណីយដ្ឋាន ឋានសួគ៌បូកគោ ជាដើម ប៉ុន្តែខ្ញុំទៅបានតែប៉ុន្មានកន្លែងក្នុងរូប នេះទេព្រោះអស់ខ្យល់អាលីងម៉ង ” ។ ពេលយប់ឡើងយើងអាច បោះតង់បានដោយគ្នាខ្ញុំសម្រេចបោះនៅជិតទំនប់ទឹក ទេសភាពវិញគឺញាក់សាច់ដោយមានបឹងនិងភ្នំនៅព័ទ្ធជុំវិញ។ យប់បើនិយាយពីឡើងបង្កាត់ភ្លើងអាំងសាច់ជាមួយអីជាក់ៗ អង្គុយជជែកគ្នាលេង ជុំវិញភ្នក់ភ្លើង និងមើលផ្កាយ ប៉ុន្តែដល់យប់ជ្រៅបន្តិចគឺរងារផ្តាំហើយនិងងងឹតហើយស្ងាត់ខ្លាំងតែម្តងស្ទើរមិនហ៊ានចេញពីតង់កុំតែឈឺ បត់ជើងដេញខ្លាំង។ តែពេលព្រឹកឡើងទេសភាពព្រមទាំង អាកាសធាតុវិញគឺថាខប់ៗ ។ បើមិនជឿទេទៅខ្លួនឯងម្ដងទៅ ', '', ['https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjueCv3GP1sStqAtvHHIH7gTikF5K0YNsN1q-hN0eVjIdw3tB6EnxblpVbWF_A4cLmAlg4yyOGifWfZ3i4XcOk-SeLknl5FJuget3wnXFA_9-kiGY_63huwgIG0tXu_bwjbCApojikAT_A/w1200-h630-p-k-no-nu/%25E1%259E%25A0%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584%25E1%259E%2584.jpg ', ' https://economy.ams.com.kh/wp-content/uploads/2022/02/%E1%9E%80%E1%9F%92%E1%9E%9A%E1%9E%BB%E1%9E%84%E1%9E%94%E1%9E%BC%E1%9E%80%E1%9E%82%E1%9F%84-1.jpg',' https://www.oknha.news/wp-content/uploads/2024/03/10-1.jpg'])">
+                <img src=" https://www.khmerplaces.com/storage/posts/May2019/7Brpc3bNC2tJRlFvxphz.jpg" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">ឧទ្យានជាតិព្រះមុនីវង្សភ្នំបូកគោ</h5>
+                    <p class="card-text  text text-truncate">ឧទ្យានជាតិព្រះមុនីវង្សភ្នំបូកគោ (កំពត)តោះ! មកស្គាល់កាន់តែលំអិត និងដឹងកន្លែងទៅលេងនៅ ភ្នំបូកគោ!ឧទ្យានជាតិព្រះមុនីវង្សភ្នំបូកគោ ដែលត្រូវបានគេស្គាល់ភាគច្រើនថា ឧទ្យានជាតិបូកគោ ស្ថិតនៅក្នុងស្រុកទឹកឈូ ខេត្តកំពត។ ភ្នំបូកគោ មានកម្ពស់ប្រមាណ 1075ម៉ែត្រធៀបទៅនឹងនីវ៉ូទឹកសមុទ្រ និង មានចម្ងាយប្រមាណ 11 គីឡូម៉ែត្រពីក្រុងកំពត ទៅកាន់ជើងភ្នំ និង ចម្ងាយ32គីឡូម៉ែត្រពីជើងភ្នំដល់កំពូលភ្នំ។ ភ្នំបូកគោត្រូវបានរកឃើញ នៅឆ្នាំ1917 ដោយជនជាតិបារាំងឈ្មោះរូលួស និងត្រូវបានអភិវឌ្ឍ ឲ្យទៅជារមណីយដ្ឋានក្នុងឆ្នាំ1921។ កាលពីមុន ភ្នំបូកគោ ធ្លាប់ជាទី កន្លែងសម្រាកដ៏ល្បីល្បាញដែលធ្វើឡើងសម្រាប់តែអភិជនបារាំង និងរាជវង្សានុវង្សប៉ុណ្ណោះ។ភ្នំបូកគោ ល្បីឈ្មោះដោយសារតែអាកាសធាតុត្រជាក់ពេញមួយឆ្នាំ ព្រមទាំងមានព្រៃព្រឹក្សាធម្មជាតិដ៏ខៀវស្រងាត់និងស្រស់បំព្រង។ ភ្ញៀវទេសចរអាចគយគន់ទិដ្ឋភាពមើលពីលើកំពូលភ្នំទៅកាន់ទីរួមខេត្តកំពត ឆ្នេរសមុទ្រនិងកោះជាច្រើនដែលនៅខាងក្រោមយ៉ាងសប្បាយរីករាយ។ ឧទ្យានជាតិភ្នំបូកគោ មានដើមឈើត្រូពិច ពាសពេញលើភ្នំ ព្រមទាំងសត្វព្រៃជាច្រើនប្រភេទ និងទឹកជ្រោះដ៏ ស្រស់ស្អាតនិងល្បីល្បាញគឺទឹកជ្រោះពពកវិល។ កន្លែងសំខាន់ៗជាច្រើនដែលយើងអាចទៅលេងបាននៅលើភ្នំបូកគោ មានដូចជា ដំណាក់ស្លាខ្មៅ ឡឺ បូកគោ ផាលេស (សណ្ឋាគារចាស់) វត្ត សំពៅប្រាំ បដិមាលោកយាយម៉ៅ ព្រះវិហារកាតូលិកចាស់ ព្រៃធម្មជាតិ ដំណាក់ព្រះបាទមុនីវង្ស ឬដំណាក់ស្តេច រមណីយដ្ឋាន ឋានសួគ៌បូកគោ ជាដើម ប៉ុន្តែខ្ញុំទៅបានតែប៉ុន្មានកន្លែងក្នុងរូប នេះទេព្រោះអស់ខ្យល់អាលីងម៉ង ” ។ ពេលយប់ឡើងយើងអាច បោះតង់បានដោយគ្នាខ្ញុំសម្រេចបោះនៅជិតទំនប់ទឹក ទេសភាពវិញគឺញាក់សាច់ដោយមានបឹងនិងភ្នំនៅព័ទ្ធជុំវិញ។ យប់បើនិយាយពីឡើងបង្កាត់ភ្លើងអាំងសាច់ជាមួយអីជាក់ៗ អង្គុយជជែកគ្នាលេង ជុំវិញភ្នក់ភ្លើង និងមើលផ្កាយ ប៉ុន្តែដល់យប់ជ្រៅបន្តិចគឺរងារផ្តាំហើយនិងងងឹតហើយស្ងាត់ខ្លាំងតែម្តងស្ទើរមិនហ៊ានចេញពីតង់កុំតែឈឺ បត់ជើងដេញខ្លាំង  ី ២ ។ តែពេលព្រឹកឡើងទេសភាពព្រមទាំង អាកាសធាតុវិញគឺថាខប់ៗ ។ បើមិនជឿទេទៅខ្លួនឯងម្ដងទៅ </p>
+                    <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From ...</span><span id="code" style="color: red;font-weight: bold;">Code: P021</span></span>
+                </div>
+            </div>
+        </div>
+         <!-- Card 11 -->
+         <div class="col col-md-3">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails(' វាលស្មៅខេត្តមណ្ឌលគីរី ', 'សម្រស់វាលស្មៅខេត្តមណ្ឌលគីរី វាលស្មៅពណ៌មាសស្អាតណាស់! ខេត្តមណ្ឌលគីរីជាខេត្តមួយដែលស្ថិតនៅភូមិភាគឦសាននៃប្រទេស  កម្ពុជា ដែលមានព្រំប្រទល់ខាងកើតជាប់នឹង ប្រទេស វៀតណាម ខាងជើងជាប់នឹង ខេត្តរតនគិរី ខាងជើងឈាងខាងលិចជាប់នឹង ខេត្តស្ទឹងត្រែងខាងលិចជាប់នឹងខេត្តក្រចេះ ហើយមានចំងាយ ៣៨០គីឡូម៉ែត្រ ពីរាជធានីភ្នំពេញ ដោយធ្វើដំណើរតាមផ្លូវជាតិលេខ៨ ៧ និង៧៦ដោយឆ្លងកាត់តាមខេត្តកណ្តាល ព្រៃវែង ត្បូងឃ្មុំកំពង់ចាម និងក្រចេះ ផ្លូវដែលអាចធ្វើដំណើរទៅដល់ខេត្តមណ្ឌលគីរី បាន មានផ្លូវគោក និងផ្លូវអាកាស បើយើង ធ្វើដំណើរតាមផ្លូវគោកយើងនិង ឃើញថាកំណាត់ផ្លូវពី ភ្នំពេញទៅមណ្ឌលគិរី ជាផ្លូវ កៅស៊ូដែលផ្តល់នូវ លក្ខណះងាយស្រួលក្នុងការធ្វើដំណើរ ។  ខេត្តនេះមានអាកាសធាតុខុសពីខេត្តផ្សេងៗទៀតនៅកម្ពុជា ដោយ នៅក្នុងរដូវក្តៅ សីតុណ្ហភាពចាប់ពី ២៧°C ទៅ ៣១°C ដែលអាចចុះ ត្រជាក់នៅពេលយប់ ខេត្តមណ្ឌលគីរីជាតំបន់ទេសចរណ៏ធម្មជាតិ ធំ មួយនៃព្រះរាជាណាចក្រកម្ពុជា ដែលមានតំបន់ទេសចរណ៏ធម្មជាតិ ជាច្រើនដូចជា ទឹកជ្រោះប្រកបដោយហ្វូងមច្ឆា ជាច្រើនប្រភេទ ព្រមទាំង រុក្ខជាតិ សត្វព្រៃ ព្រៃកោងកាង និងភ្នំតូច ធំ ជាច្រើន។ ', '', ['https://economy.ams.com.kh/wp-content/uploads/2022/04/%E1%9E%98%E1%9E%8E%E1%9F%92%E1%9E%8C%E1%9E%9B%E1%9E%82%E1%9E%B8%E1%9E%9A%E1%9E%B8-1.jpg ', ' https://eacnews.asia/uploads/images/27352/_2.jpg',' https://www.ppreporter.com/wp-content/uploads/2022/04/Screenshot-2022-04-11-155000.png'])">
+                <img src=" https://i.ytimg.com/vi/U-h4swDhHz0/sddefault.jpg" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                <div class="card-body">
+                    <h5 class="card-title">វាលស្មៅខេត្តមណ្ឌលគីរី </h5>
+                    <p class="card-text  text text-truncate">សម្រស់វាលស្មៅខេត្តមណ្ឌលគីរី វាលស្មៅពណ៌មាសស្អាតណាស់! ខេត្តមណ្ឌលគីរីជាខេត្តមួយដែលស្ថិតនៅភូមិភាគឦសាននៃប្រទេស  កម្ពុជា ដែលមានព្រំប្រទល់ខាងកើតជាប់នឹង ប្រទេស វៀតណាម ខាងជើងជាប់នឹង ខេត្តរតនគិរី ខាងជើងឈាងខាងលិចជាប់នឹង ខេត្តស្ទឹងត្រែងខាងលិចជាប់នឹងខេត្តក្រចេះ ហើយមានចំងាយ ៣៨០គីឡូម៉ែត្រ ពីរាជធានីភ្នំពេញ ដោយធ្វើដំណើរតាមផ្លូវជាតិលេខ៨ ៧ និង៧៦ដោយឆ្លងកាត់តាមខេត្តកណ្តាល ព្រៃវែង ត្បូងឃ្មុំកំពង់ចាម និងក្រចេះ ផ្លូវដែលអាចធ្វើដំណើរទៅដល់ខេត្តមណ្ឌលគីរី បាន មានផ្លូវគោក និងផ្លូវអាកាស បើយើង ធ្វើដំណើរតាមផ្លូវគោកយើងនិង ឃើញថាកំណាត់ផ្លូវពី ភ្នំពេញទៅមណ្ឌលគិរី ជាផ្លូវ កៅស៊ូដែលផ្តល់នូវ លក្ខណះងាយស្រួលក្នុងការធ្វើដំណើរ ។  ខេត្តនេះមានអាកាសធាតុខុសពីខេត្តផ្សេងៗទៀតនៅកម្ពុជា ដោយ នៅក្នុងរដូវក្តៅ សីតុណ្ហភាពចាប់ពី ២៧°C ទៅ ៣១°C ដែលអាចចុះ ត្រជាក់នៅពេលយប់ ខេត្តមណ្ឌលគីរីជាតំបន់ទេសចរណ៏ធម្មជាតិ ធំ មួយនៃព្រះរាជាណាចក្រកម្ពុជា ដែលមានតំបន់ទេសចរណ៏ធម្មជាតិ ជាច្រើនដូចជា ទឹកជ្រោះប្រកបដោយហ្វូងមច្ឆា ជាច្រើនប្រភេទ ព្រមទាំង រុក្ខជាតិ សត្វព្រៃ ព្រៃកោងកាង និងភ្នំតូច ធំ ជាច្រើន។ </p>
+                    <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From ...</span><span id="code" style="color: red;font-weight: bold;">Code: P114</span></span>
+                </div>
+            </div>
+        </div>
+         <!-- Card 12 -->
+         <!-- <div class="col col-md-3">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails(' ', ' ', '', [' ', ' ',' '])">
+                <img src=" " style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text  text text-truncate"> </p>
+                    <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $</span><span id="code" style="color: red;font-weight: bold;">Code: P0125</span></span>
+                </div>
+            </div>
+        </div> -->
+         <!-- Card 13 -->
+         <!-- <div class="col col-md-3">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails(' ', ' ', '', [' ', ' ',' '])">
+                <img src=" " style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  class="card-img-top" alt="Service 2">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text  text text-truncate"> </p>
+                    <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $</span><span id="code" style="color: red;font-weight: bold;">Code: P0125</span></span>
+                </div>
+            </div>
+        </div> -->
+        <!-- Hidden Product Cards -->
+        <!-- <div class="col col-md-3 d-none" id="hiddenProducts1">
+            <div class="card h-100" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="loadCardDetails('ទឹកធ្លាក់អន្លង់ជើងចាប(សៀមរាប)', 'ទឹកធ្លាក់អន្លង់ជើងចាប នៅភ្នំគូលែន (សៀមរាប)  ទឹកធ្លាក់អន្លង់ជើងចាបអ្នកចូលចិត្តបោះតង់នៅសៀមរាបភាគច្រើនប្រហែលជាស្គាល់ហើយកន្លែងនេះ ។', '$200', ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_0skLD8buJXExdRDXPjIFiyEqdv9I6u1WJA&s', 'https://refile.tnaot.com/image/2024/02/02/17ac7391db9f4409ae86307b70032438.jpg', 'https://sgp1.digitaloceanspaces.com/newsasiacloud/wp-content/uploads/2024/01/14-98.jpg'])">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_0skLD8buJXExdRDXPjIFiyEqdv9I6u1WJA&s" class="card-img-top" style="background-size: cover;background-repeat: no-repeat;height: 250px;background-size: cover;background-position: center;background-repeat: no-repeat;"  alt="Hidden Service 1">
+                <div class="card-body">
+                    <h5 class="card-title">ទឹកធ្លាក់អន្លង់ជើងចាប(សៀមរាប)</h5>
+                    <p class="card-text  text text-truncate">This is a hidden service description.</p>
+                    <span class="text-primary"><span id="price" style="font-weight: bold;font-size: 18px;">From $70 </span><span id="code" style="color: red;font-weight: bold;">Code: P005</span></span>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <a class="btn btn-primary mt-2" href="Advanture.html">Show More</a>
+    <!-- <button class="btn btn-info mt-3" id="showMoreBtn" onclick="toggleProductVisibility()">Show More</button> -->
+</div>
+
+<!-- Modal for Service Details -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Service Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselImages" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" id="carouselItems"></div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselImages" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselImages" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <h5 id="serviceTitle"></h5>
+                <p id="serviceDescription"></p>
+                <span id="servicePrice" class="text-primary"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#paymentModal" onclick="preparePayment()">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Payment -->
+<div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content w-70" >
+            <div class="modal-header">
+                <h5 class="modal-title" id="paymentModalLabel">Payment Method</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="paymentDetails" class="fw-bold"></p>
+                <div class="mb-4">
+                    <h6>Select Your Payment Method:</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="paypal" checked onclick="togglePaymentForm()">
+                        <label class="form-check-label" for="paypal">PayPal</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="creditCard" onclick="togglePaymentForm()">
+                        <label class="form-check-label" for="creditCard">Visa/MasterCard</label>
+                    </div>
+                </div>
+                
+                <div id="paypalInfo" class="payment-info">
+                    <p>Redirecting to PayPal for payment.</p>
+                </div>
+
+                <div id="creditCardInfo" class="payment-info d-none">
+                    <h6 class="mt-4">Credit Card Information</h6>
+                    <div class="mb-3">
+                        <label for="creditCardNumber" class="form-label">Credit Card Number</label>
+                        <input type="text" class="form-control" id="creditCardNumber" placeholder="1234 5678 9012 3456" required>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="expiration" class="form-label">Expiration Date</label>
+                                <input type="text" class="form-control" id="expiration" placeholder="MM/YY" required>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="cvc" class="form-label">CVC</label>
+                                <input type="text" class="form-control" id="cvc" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success mt-3" onclick="submitPayment()">Submit Payment</button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal for Invoice -->
+<div class="modal fade" id="invoiceModal" tabindex="-1" aria-labelledby="invoiceModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="invoiceModalLabel">Invoice</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6 style="margin-left: 30px;" id="invoiceServiceTitle"></h6>
+                <p id="invoiceServiceDescription"></p>
+                <p id="invoiceAmount" class="fw-bold"></p>
+                <p>dfgdfgdfgd</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div><br><br><br>
+<div class="container col" style="background-color: #d4d4d41e;border:  0px solid #d4d4d4;border-radius: 1px;padding: 3px;"> <!-- slide container -->
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="txt d-flex-column align-items-center justify-content-center p-2 p-lg-0" style="background-color: rgba(135, 207, 235, 0.158);border:  1px solid #d4d4d4;height: 100%;border-radius: 3px;"><center>
+                <h4 class="mt-5 fw-bold" style="color: rgb(255, 255, 255);">Thanks Dear for Support us</h4>
+                <h4 style="padding: 15px;text-align: left;color: rgb(75, 72, 72);">I wanted to take a moment to express my heartfelt thanks for your unwavering support during this journey. Your encouragement and assistance have been invaluable, and I truly appreciate everything you've done.</h4>
+                <!-- <button  class="btn btn-primary btn-sm fs-6 text-uppercase d-none d-md-block" type="button" ><a href="Product.html" style="text-decoration: none;color: white;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;">Let We Go</a></button> -->
+            </center>
+            <!-- <button  class="btn btn-primary btn-sm fs-6 text-uppercase d-block d-md-none" type="button" ><a href="Product.html" style="text-decoration: none;color: white;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;">Let We Go</a></button> -->
+            </div>
+          </div>
+      <div class="col-sm-6 ">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="box-shadow: 1px 1px 10px 3px #888888;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/451503637_1016584299839040_2591175891523199774_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=teKz8wiunMEQ7kNvgFXGmnq&_nc_ht=scontent-bkk1-1.xx&_nc_gid=ApPjVNV3i0B4qE42DRNmS8F&oh=00_AYBhNWOcMyDdHNkFCOhX4F6fXTcdYMaZTQkKrju7tRQl9Q&oe=66E6FDCC" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/451412005_1016584056505731_22879609703928352_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=zGnEEJztj-UQ7kNvgG5ki6s&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AAwcy9hKv00dbFDgsXsA3Ey&oh=00_AYDFnPo-S-tjoNtNoGZ0YOQjA6TuEtnpQ0U_MU381L_D8w&oe=66E6F4C3" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/451087806_1016584106505726_1235485293941750418_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ugCELlT1NtIQ7kNvgEb9O6k&_nc_ht=scontent-bkk1-2.xx&_nc_gid=AqtZN_Jx7Vewn7t2Hfhc82B&oh=00_AYBhzrMFJeV9SnWE7qT5FQk1pEHd4tT9_NGi0wbm50lv9g&oe=66E6EF89" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+    </div>
+<!-- Footer -->
+<footer class="bg-dark text-white text-center mt-4 py-3">
+    <div class="container">
+        <p class="mb-0">© 2023 Alpha01.Com.</p>
+        <ul class="list-inline mt-2">
+            <li class="list-inline-item">
+                <a href="#" class="text-white">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="text-white">Terms of Service</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="text-white">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function loadCardDetails(title, description, price, images) {
+        // Set the service details
+        document.getElementById('serviceTitle').innerText = title;
+        document.getElementById('serviceDescription').innerText = description;
+        document.getElementById('servicePrice').innerText = "Price: " + price;
+
+        // Set the carousel images
+        const carouselItems = document.getElementById('carouselItems');
+        carouselItems.innerHTML = ""; // Clear previous images
+        images.forEach((image, index) => {
+            const isActive = index === 0 ? 'active' : '';
+            carouselItems.innerHTML += `
+                <div class="carousel-item ratio ratio-16x9 ${isActive}">
+                    <img src="${image}" class="d-block w-100 bg-cover bg-no-repeat" alt="${title}" style="height: 400px; object-fit: cover;background-size:cover;width:100%;" />
+                </div>
+            `;
+        });
+    }
+
+    function preparePayment() {
+        const price = document.getElementById('servicePrice').innerText;
+        document.getElementById('paymentDetails').innerText = `You have selected a service costing ${price}.`;
+        togglePaymentForm(); // Show appropriate payment form
+    }
+    function togglePaymentForm() {
+        const selectedMethod = document.querySelector('input[name="paymentMethod"]:checked').value;
+        const paypalInfo = document.getElementById('paypalInfo');
+        const creditCardInfo = document.getElementById('creditCardInfo');
+
+        if (selectedMethod === 'paypal') {
+            paypalInfo.classList.remove('d-none');
+            creditCardInfo.classList.add('d-none');
+        } else {
+            paypalInfo.classList.add('d-none');
+            creditCardInfo.classList.remove('d-none');
+        }
+    }
+    function submitPayment() {
+        const title = document.getElementById('serviceTitle').innerText;
+        const description = document.getElementById('serviceDescription').innerText;
+        const price = document.getElementById('servicePrice').innerText;
+
+        // Populate invoice details
+        document.getElementById('invoiceServiceTitle').innerText = title;
+        // document.getElementById('invoiceServiceDescription').innerText = description;
+        document.getElementById('invoiceAmount').innerText = price;
+
+        // Show invoice modal
+        const invoiceModal = new bootstrap.Modal(document.getElementById('invoiceModal'));
+        invoiceModal.show();
+
+        // Optionally, hide the payment modal
+        const paymentModal = bootstrap.Modal.getInstance(document.getElementById('paymentModal'));
+        paymentModal.hide();
+    }
+
+    function toggleProductVisibility() {
+        const hiddenProducts = document.querySelectorAll(".d-none");
+        hiddenProducts.forEach(product => product.classList.toggle("d-none"));
+        const showMoreBtn = document.getElementById("showMoreBtn");
+        showMoreBtn.innerText = hiddenProducts[0].classList.contains("d-none") ? "Show More" : "Show Less";
+    }
+</script>
+<script>
+    document.getElementById('searchButton').addEventListener('click', function() {
+    const searchQuery = document.getElementById('searchInput').value.toLowerCase();
+    const cards = document.querySelectorAll('.col');
+
+    cards.forEach(card => {
+        const cardTitle = card.querySelector('.card-title').innerText.toLowerCase();
+        const cardText = card.querySelector('.card-text').innerText.toLowerCase();
+
+        if (cardTitle.includes(searchQuery) || cardText.includes(searchQuery)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+});
+</script>
+<script>
+    const tabs = document.querySelectorAll('.navtab');
+const contents = document.querySelectorAll('.content');
+const underline = document.querySelector('.underline');
+
+function updateUnderline() {
+  const activeTab = document.querySelector('.navtab.active');
+  underline.style.width = `${activeTab.offsetWidth}px`;
+  underline.style.left = `${activeTab.offsetLeft}px`;
+}
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const target = tab.getAttribute('data-target');
+    contents.forEach(content => {
+      if (content.id === target) {
+        content.classList.add('active');
+      } else {
+        content.classList.remove('active');
+      }
+    });
+    updateUnderline();
+  });
+});
+
+window.addEventListener('resize', updateUnderline);
+updateUnderline();
+</script>
+</body>
+</html>

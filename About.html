@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Tour_Kh</title>
+    <style>
+      body{
+          background-image: url(back01.png);
+          background-color: rgb(115, 92, 50);
+          background-size: cover;
+          background-repeat: no-repeat;
+      }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark " style="background-color: rgba(138, 93, 10, 0.726);;padding: 0;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)" style="width: 150px;"><img src="logo.png" alt="logo" style="width: 100%;height: 100%;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item bg-promary">
+                <a class="nav-link"href="index.html" id="homelink">Home</a>
+              </li>
+              <li class="nav-item "style="border-radius: 5px;">
+                <a class="nav-link "href="Tour.html" id="Tours_Khmer">Tours_Kh</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"href="Advanture.html" id="Adventure">Adventure</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-primary"style="color:white;border-radius: 5px;background-color: #0D6EFD;"  href="About.html" id="About Us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scroll-behavior: smooth;"href="contact.html" id="Contact Us">Contact Us</a>
+              </li>
+              
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                   <!-- <img style="display: block;justify-content: center;align-items: center;height: 30px;" src="flag_kh.png" alt=""> -->
+                   Language
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                  <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
+                  <li><a class="dropdown-item" href="#" data-lang="km">ភាសាខ្មែរ(Khmer)</a></li>
+                </ul>
+              </div>
+            </div>
+            </ul>
+            <div class="ms-auto">
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search" id="searchInput">
+              <button class="btn btn-primary" type="button" id="searchButton">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav><br><br><br>
+<!-- section1 -->
+      <div class="container">
+        
+<div class="tour-info" style="color: white;">
+  <h1>Explore the Wonders of Cambodia</h1>
+  <p>
+      Discover the rich history and vibrant culture of Cambodia with our exclusive tour package. From the majestic temples of Angkor to the bustling streets of Phnom Penh, our tour offers an unforgettable experience.
+  </p>
+  <h2>Tour Highlights:</h2>
+  <ul>
+      <li>Visit the iconic Angkor Wat and other ancient temples</li>
+      <li>Explore the Royal Palace and Silver Pagoda in Phnom Penh</li>
+      <li>Experience the vibrant markets and local cuisine</li>
+      <li>Relax on the pristine beaches of Sihanoukville</li>
+      <li>Discover the natural beauty of the Cardamom Mountains</li>
+  </ul>
+  <p>
+      Our knowledgeable guides will ensure you have an enriching and enjoyable journey through Cambodia. Whether you're a history buff, a foodie, or an adventure seeker, this tour has something for everyone.
+  </p>
+</div>
+
+<a href="contact-us.html" class="contact-button" style="color:rgb(0, 0, 0)">Contact Us for More Information</a>
+      </div>
+<footer class="container  text-white text-center mt-5 py-3" style="padding: 0;background-color: rgba(252, 242, 230, 0.144);">
+    <div class="container">
+        <p class="mb-0">© 2023 Alpha01.Com.</p>
+        <ul class="list-inline mt-2">
+            <li class="list-inline-item">
+                <a href="#" class="text-white">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="text-white">Terms of Service</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="text-white">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById('searchButton').addEventListener('click', function() {
+    const searchQuery = document.getElementById('searchInput').value.toLowerCase();
+    const cards = document.querySelectorAll('.col');
+
+    cards.forEach(card => {
+        const cardTitle = card.querySelector('.card-title').innerText.toLowerCase();
+        const cardText = card.querySelector('.card-text').innerText.toLowerCase();
+
+        if (cardTitle.includes(searchQuery) || cardText.includes(searchQuery)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+});
+</script>
+</body>
+</html>
